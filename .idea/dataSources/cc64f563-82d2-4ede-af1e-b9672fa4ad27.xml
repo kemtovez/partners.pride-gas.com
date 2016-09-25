@@ -1,0 +1,5567 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL - pridegas@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="bdobase_info">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="blessbase_info"/>
+    <schema id="3" name="bless_ru"/>
+    <schema id="4" name="information_schema"/>
+    <schema id="5" name="lamara_crm"/>
+    <schema id="6" name="lamara_freebiz"/>
+    <schema id="7" name="mysql"/>
+    <schema id="8" name="performance_schema"/>
+    <schema id="9" name="pridegas"/>
+    <schema id="10" name="revelationonline"/>
+    <schema id="11" name="rev_wp"/>
+    <schema id="12" name="u5150803_wbs24"/>
+    <schema id="13" name="wbs24"/>
+    <table id="14" parent="1" name="1_longsword"/>
+    <table id="15" parent="1" name="Awakening_Ability_Table"/>
+    <table id="16" parent="1" name="Awakening_Table"/>
+    <table id="17" parent="1" name="BuyingFromNpc_Table"/>
+    <table id="18" parent="1" name="CharacterFunction_Table"/>
+    <table id="19" parent="1" name="Group_Quest"/>
+    <table id="20" parent="1" name="Region_Table"/>
+    <table id="21" parent="1" name="SkillType_Table_New"/>
+    <table id="22" parent="1" name="Skill_Table_New"/>
+    <table id="23" parent="1" name="alchemy_recipe"/>
+    <table id="24" parent="1" name="buff_table"/>
+    <table id="25" parent="1" name="card_table"/>
+    <table id="26" parent="1" name="character_table"/>
+    <table id="27" parent="1" name="comments"/>
+    <table id="28" parent="1" name="cooking_recipe"/>
+    <table id="29" parent="1" name="dialog_table"/>
+    <table id="30" parent="1" name="equipsetoption"/>
+    <table id="31" parent="1" name="explore_table_name_ru"/>
+    <table id="32" parent="1" name="favorites_page"/>
+    <table id="33" parent="1" name="horse_fusion_table"/>
+    <table id="34" parent="1" name="houseinfo_new"/>
+    <table id="35" parent="1" name="item"/>
+    <table id="36" parent="1" name="itemexchangesource"/>
+    <table id="37" parent="1" name="itemmaingroup_table"/>
+    <table id="38" parent="1" name="itemmaingroup_table_dev"/>
+    <table id="39" parent="1" name="itemmaking"/>
+    <table id="40" parent="1" name="items_for_return"/>
+    <table id="41" parent="1" name="items_for_return_new"/>
+    <table id="42" parent="1" name="itemsubgroup_table"/>
+    <table id="43" parent="1" name="itemsubgroup_table_dev"/>
+    <table id="44" parent="1" name="knowledgelearning_table"/>
+    <table id="45" parent="1" name="like_comm"/>
+    <table id="46" parent="1" name="like_horse_fus"/>
+    <table id="47" parent="1" name="like_recipe"/>
+    <table id="48" parent="1" name="like_skillbilds"/>
+    <table id="49" parent="1" name="manufacture_table"/>
+    <table id="50" parent="1" name="manufacture_xml"/>
+    <table id="51" parent="1" name="map_mines"/>
+    <table id="52" parent="1" name="map_mines_line"/>
+    <table id="53" parent="1" name="map_mines_node"/>
+    <table id="54" parent="1" name="map_mines_node_new"/>
+    <table id="55" parent="1" name="map_monsters"/>
+    <table id="56" parent="1" name="map_npc"/>
+    <table id="57" parent="1" name="map_region_table"/>
+    <table id="58" parent="1" name="map_single_res_point"/>
+    <table id="59" parent="1" name="map_single_users_point"/>
+    <table id="60" parent="1" name="new_alchemy_recipe"/>
+    <table id="61" parent="1" name="new_cooking_recipe"/>
+    <table id="62" parent="1" name="pet_equipskill_table"/>
+    <table id="63" parent="1" name="pet_exp_table"/>
+    <table id="64" parent="1" name="pet_fusion_table"/>
+    <table id="65" parent="1" name="pet_fusioncolor_table"/>
+    <table id="66" parent="1" name="pet_skill_table"/>
+    <table id="67" parent="1" name="pet_skilltype_table_new"/>
+    <table id="68" parent="1" name="pet_table"/>
+    <table id="69" parent="1" name="plantworker_table"/>
+    <table id="70" parent="1" name="plantworkerpassiveskill_table"/>
+    <table id="71" parent="1" name="quest_table"/>
+    <table id="72" parent="1" name="receipefortown_new"/>
+    <table id="73" parent="1" name="ru_region_table"/>
+    <table id="74" parent="1" name="servant_table"/>
+    <table id="75" parent="1" name="servantmating_table"/>
+    <table id="76" parent="1" name="servantset_table"/>
+    <table id="77" parent="1" name="spirit"/>
+    <table id="78" parent="1" name="spirit_win"/>
+    <table id="79" parent="1" name="theme_table"/>
+    <table id="80" parent="1" name="translate"/>
+    <table id="81" parent="1" name="users"/>
+    <table id="82" parent="1" name="users_bilds"/>
+    <table id="83" parent="1" name="users_recipe"/>
+    <table id="84" parent="1" name="users_skills_bilds"/>
+    <table id="85" parent="1" name="wear"/>
+    <table id="86" parent="1" name="wear_sets"/>
+    <column id="87" parent="14" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="88" parent="14" name="Index_id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="89" parent="14" name="Enchant">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="90" parent="14" name="NeedEnchantItemID">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="91" parent="14" name="NeedEnchantItemCount">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="92" parent="14" name="NeedPerfectEnchantItemCount">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="93" parent="14" name="EnduranceLimit">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="94" parent="14" name="ReduceMaxEnduranceAtFail">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="95" parent="14" name="ReduceMaxEnduranceAtPerfectEnchant">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="96" parent="14" name="RecoverMaxEndurance">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="97" parent="14" name="Socket">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="98" parent="14" name="DDD">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="99" parent="14" name="AddedDDD">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="100" parent="14" name="DHIT">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="101" parent="14" name="DDV">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="102" parent="14" name="HDDV">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="103" parent="14" name="DPV">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="104" parent="14" name="HDPV">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="105" parent="14" name="RDD">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="106" parent="14" name="AddedRDD">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="107" parent="14" name="RHIT">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="108" parent="14" name="RDV">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="109" parent="14" name="HRDV">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="110" parent="14" name="RPV">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="111" parent="14" name="HRPV">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="112" parent="14" name="MDD">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="113" parent="14" name="AddedMDD">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="114" parent="14" name="MHIT">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="115" parent="14" name="MDV">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="116" parent="14" name="HMDV">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="117" parent="14" name="MPV">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="118" parent="14" name="HMPV">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="119" parent="14" name="SkillNo">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="120" parent="14" name="Description">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="121" parent="14" name="ru_Description">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="122" parent="14" name="en_Description">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="123" parent="14" name="IsNotifyWorld">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <index id="124" parent="14" name="Enchant">
+      <columns>Enchant</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="125" parent="14" name="Index_id">
+      <columns>Index_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="126" parent="14" name="IsNotifyWorld">
+      <columns>IsNotifyWorld</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="127" parent="14" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="128" parent="15" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="129" parent="15" name="Index_id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="130" parent="15" name="AbilityName">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="131" parent="15" name="en_AbilityName">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="132" parent="15" name="ru_AbilityName">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <index id="133" parent="15" name="Index_id">
+      <columns>Index_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="134" parent="15" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="135" parent="16" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="136" parent="16" name="SkillNo">
+      <mandatory>1</mandatory>
+      <data-type>varchar(350)|0</data-type>
+    </column>
+    <column id="137" parent="16" name="Ability_Index1">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="138" parent="16" name="Ability_Index2">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="139" parent="16" name="Ability_Index3">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="140" parent="16" name="Ability_Index4">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="141" parent="16" name="Ability_Index5">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="142" parent="16" name="Ability_Index6">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="143" parent="16" name="Ability_Index7">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="144" parent="16" name="Ability_Index8">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="145" parent="16" name="Ability_Index9">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="146" parent="16" name="Ability_Index10">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="147" parent="16" name="Ability_Index11">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="148" parent="16" name="Ability_Index12">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="149" parent="16" name="Ability_Index13">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="150" parent="16" name="Ability_Index14">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="151" parent="16" name="Ability_Index15">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="152" parent="16" name="Ability_Index16">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="153" parent="16" name="Ability_Index17">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="154" parent="16" name="Ability_Index18">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="155" parent="16" name="Ability_Index19">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="156" parent="16" name="Ability_Index20">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="157" parent="16" name="Ability_Index21">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="158" parent="16" name="Ability_Index22">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="159" parent="16" name="Ability_Index23">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="160" parent="16" name="Ability_Index24">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="161" parent="16" name="Ability_Index25">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="162" parent="16" name="Ability_Index26">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="163" parent="16" name="Ability_Index27">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="164" parent="16" name="Ability_Index28">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="165" parent="16" name="Ability_Index29">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="166" parent="16" name="Ability_Index30">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="167" parent="16" name="Ability_Index31">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="168" parent="16" name="Ability_Index32">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <key id="169" parent="16" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="170" parent="17" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="171" parent="17" name="NPCKey">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="172" parent="17" name="ItemKey">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="173" parent="17" name="Conditions">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <index id="174" parent="17" name="ItemKey">
+      <columns>ItemKey</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="175" parent="17" name="NPCKey">
+      <columns>NPCKey</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="176" parent="17" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="177" parent="18" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="178" parent="18" name="CharacterKey">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="179" parent="18" name="ShopType">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="180" parent="18" name="BuyingFromGuildShopNpc">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="181" parent="18" name="SellingToGuildShopNpc">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="182" parent="18" name="ConditionForAuction">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="183" parent="18" name="AuctionKey">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="184" parent="18" name="ConditionForBuyingFromNpc">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="185" parent="18" name="BuyingFromNpc">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="186" parent="18" name="ConditionForSellingToNpc">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="187" parent="18" name="SellingToNpc">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="188" parent="18" name="ConditionForTrading">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="189" parent="18" name="Trading">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="190" parent="18" name="isGuild">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="191" parent="18" name="isRepair">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="192" parent="18" name="isExtract">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="193" parent="18" name="ConditionExplore">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="194" parent="18" name="ExploreWaypoint">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <key id="195" parent="18" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="196" parent="19" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="197" parent="19" name="QuestGroup">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="198" parent="19" name="GroupName">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="199" parent="19" name="ru_GroupName">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="200" parent="19" name="en_GroupName">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <key id="201" parent="19" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="202" parent="20" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="203" parent="20" name="Index_id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="204" parent="20" name="RegionGroupKey">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="205" parent="20" name="WaypointKey">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="206" parent="20" name="ExploreKey">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="207" parent="20" name="TerritoryKey">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="208" parent="20" name="AreaName">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="209" parent="20" name="RegionType">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="210" parent="20" name="TradeOriginRegion">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="211" parent="20" name="ReturnPositionName">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="212" parent="20" name="ru_AreaName">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="213" parent="20" name="ru_ReturnPositionName">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="214" parent="20" name="en_AreaName">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="215" parent="20" name="en_ReturnPositionName">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <key id="216" parent="20" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="217" parent="21" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="218" parent="21" name="Class">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="219" parent="21" name="SkillNo">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="220" parent="21" name="SkillName">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="221" parent="21" name="en_SkillName">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="222" parent="21" name="SkillShortName">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="223" parent="21" name="SkillOwnerType">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="224" parent="21" name="IsToggle">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="225" parent="21" name="SkillType">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="226" parent="21" name="UiDisplayType">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="227" parent="21" name="UpgradeSkillType">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="228" parent="21" name="ForbidSkillType">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="229" parent="21" name="IsSettableQuickSlot">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="230" parent="21" name="WeaponEnduranceDecreseRate">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="231" parent="21" name="IsSiegeArea">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="232" parent="21" name="IsUsableFieldOnly">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="233" parent="21" name="AreaCheck">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="234" parent="21" name="RequireEquipType">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="235" parent="21" name="EquipedItemID">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="236" parent="21" name="DisableOnBattle">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="237" parent="21" name="IsTargetDead">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="238" parent="21" name="ActionName">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="239" parent="21" name="IsTestimonialSkill">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="240" parent="21" name="IconImageFile">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="241" parent="21" name="Control">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="242" parent="21" name="en_Control">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="243" parent="21" name="Desc_text">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="244" parent="21" name="en_Desc_text">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="245" parent="21" name="MoviePath">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="246" parent="21" name="Combo_MoviePath">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="247" parent="21" name="ru_SkillName">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="248" parent="21" name="ru_Desc_text">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="249" parent="21" name="ru_Control">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <index id="250" parent="21" name="SkillNo">
+      <columns>SkillNo</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="251" parent="21" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="252" parent="22" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="253" parent="22" name="SkillNo">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="254" parent="22" name="SkillLevel">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="255" parent="22" name="ActionName">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="256" parent="22" name="IsPrompt_ForLearning">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="257" parent="22" name="SkillPoint_ForLearning">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="258" parent="22" name="PcLevel_ForLearning">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="259" parent="22" name="NeedMoney_ForLearning">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="260" parent="22" name="NeedItemID_ForLearning">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="261" parent="22" name="NeedItemCount_ForLearning">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="262" parent="22" name="NeedSkillNo0_ForLearning">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="263" parent="22" name="NeedSkillLevelNo0_ForLearning">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="264" parent="22" name="NeedSkillNo1_ForLearning">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="265" parent="22" name="NeedSkillLevelNo1_ForLearning">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="266" parent="22" name="RequireHP">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="267" parent="22" name="RequireMP">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="268" parent="22" name="RequireSP">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="269" parent="22" name="RequireSubResourcePoint">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="270" parent="22" name="NeedItemID">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="271" parent="22" name="NeedItemCount">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="272" parent="22" name="IsGlobalCycle">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="273" parent="22" name="ReuseCycle">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="274" parent="22" name="ApplyNumber">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="275" parent="22" name="DoCheckHit">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="276" parent="22" name="VariedHit">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="277" parent="22" name="BuffApplyRate">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="278" parent="22" name="StunValue">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="279" parent="22" name="Buff0">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="280" parent="22" name="Buff1">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="281" parent="22" name="Buff2">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="282" parent="22" name="Buff3">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="283" parent="22" name="Buff4">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="284" parent="22" name="Buff5">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="285" parent="22" name="Buff6">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="286" parent="22" name="Buff7">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="287" parent="22" name="Buff8">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="288" parent="22" name="Buff9">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="289" parent="22" name="Desc_text">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="290" parent="22" name="en_Desc_text">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="291" parent="22" name="UsableInCoolTime">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="292" parent="22" name="ru_Desc_text">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <index id="293" parent="22" name="SkillLevel">
+      <columns>SkillLevel</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="294" parent="22" name="SkillNo">
+      <columns>SkillNo</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="295" parent="22" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="296" parent="23" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="297" parent="23" name="cat">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="298" parent="23" name="result">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="299" parent="23" name="lucky_result">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="300" parent="23" name="item1">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="301" parent="23" name="col1">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="302" parent="23" name="item2">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="303" parent="23" name="col2">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="304" parent="23" name="item3">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="305" parent="23" name="col3">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="306" parent="23" name="item4">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="307" parent="23" name="col4">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="308" parent="23" name="item5">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="309" parent="23" name="col5">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="310" parent="23" name="likes">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="311" parent="23" name="lvl">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <key id="312" parent="23" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="313" parent="24" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="314" parent="24" name="Index_id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="315" parent="24" name="BuffName">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="316" parent="24" name="Level">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="317" parent="24" name="id_Group">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="318" parent="24" name="ConditionType">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="319" parent="24" name="ModuleType">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="320" parent="24" name="BuffType">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="321" parent="24" name="IsAbsolute">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="322" parent="24" name="IsOverlapped">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="323" parent="24" name="ApplyRate">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="324" parent="24" name="ValidityTime">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="325" parent="24" name="RepeatTime">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="326" parent="24" name="LimitCount">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="327" parent="24" name="NeedEquipType">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="328" parent="24" name="RemoveOnDead">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="329" parent="24" name="OnlyApplyToCharacter">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="330" parent="24" name="ApplyToGroup">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="331" parent="24" name="Param0">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="332" parent="24" name="Param1">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="333" parent="24" name="Param2">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="334" parent="24" name="Param3">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="335" parent="24" name="Param4">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="336" parent="24" name="Param5">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="337" parent="24" name="Param6">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="338" parent="24" name="Param7">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="339" parent="24" name="Param8">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="340" parent="24" name="Param9">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="341" parent="24" name="BuffEffect">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="342" parent="24" name="BuffIcon">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="343" parent="24" name="IsDisplay">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="344" parent="24" name="Description">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="345" parent="24" name="ru_Description">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="346" parent="24" name="en_Description">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <key id="347" parent="24" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="348" parent="25" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="349" parent="25" name="Key_id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="350" parent="25" name="Name">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="351" parent="25" name="text">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="352" parent="25" name="KnowledgeType">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="353" parent="25" name="KnowledgeLevel">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="354" parent="25" name="Picture">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="355" parent="25" name="MainTheme">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="356" parent="25" name="isGeneral">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="357" parent="25" name="MinDd">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="358" parent="25" name="MaxDd">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="359" parent="25" name="Hit">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="360" parent="25" name="BuffType">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="361" parent="25" name="VariedValue">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="362" parent="25" name="ApplyTurn">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="363" parent="25" name="ValidTurn">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="364" parent="25" name="Keyword">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="365" parent="25" name="position">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="366" parent="25" name="ContentsGroupKey">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="367" parent="25" name="ru_Name">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="368" parent="25" name="ru_text">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="369" parent="25" name="ru_Keyword">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="370" parent="25" name="en_Name">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="371" parent="25" name="en_text">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="372" parent="25" name="en_Keyword">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <index id="373" parent="25" name="Key_id">
+      <columns>Key_id</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="374" parent="25" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <key id="375" parent="25" name="Key_id">
+      <columns>Key_id</columns>
+      <underlying-index>Key_id</underlying-index>
+    </key>
+    <column id="376" parent="26" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="377" parent="26" name="Index_id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="378" parent="26" name="DisplayName">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="379" parent="26" name="ru_DisplayName">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="380" parent="26" name="CharacterTitle">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="381" parent="26" name="ru_CharacterTitle">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="382" parent="26" name="CharacterGroup">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="383" parent="26" name="CharKind">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="384" parent="26" name="GradeType">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="385" parent="26" name="Level">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="386" parent="26" name="Exp">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="387" parent="26" name="SkillPointExp">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="388" parent="26" name="DropID">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="389" parent="26" name="StealDropID">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="390" parent="26" name="CampFireDropID">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="391" parent="26" name="InstanceDropID">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="392" parent="26" name="CollectDropID">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="393" parent="26" name="VanishTime">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="394" parent="26" name="LootAuthorityTime">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="395" parent="26" name="HP">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="396" parent="26" name="MP">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="397" parent="26" name="HPRegen">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="398" parent="26" name="MPRegen">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="399" parent="26" name="Weight">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="400" parent="26" name="CriticalRate">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="401" parent="26" name="DDD">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="402" parent="26" name="DHIT">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="403" parent="26" name="DDV">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="404" parent="26" name="HDDV">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="405" parent="26" name="DPV">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="406" parent="26" name="HDPV">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="407" parent="26" name="RDD">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="408" parent="26" name="RHIT">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="409" parent="26" name="RDV">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="410" parent="26" name="HRDV">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="411" parent="26" name="RPV">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="412" parent="26" name="HRPV">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="413" parent="26" name="MDD">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="414" parent="26" name="MHIT">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="415" parent="26" name="MDV">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="416" parent="26" name="HMDV">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="417" parent="26" name="MPV">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="418" parent="26" name="HMPV">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="419" parent="26" name="TribeType">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="420" parent="26" name="VariedAttackSpeedRate">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="421" parent="26" name="VariedMoveSpeedRate">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="422" parent="26" name="VariedCastingSpeedRate">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="423" parent="26" name="AttackRange">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="424" parent="26" name="SpawnDelayTime">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="425" parent="26" name="SpawnVariableTime">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="426" parent="26" name="SpawnStartHour">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="427" parent="26" name="SpawnEndHour">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="428" parent="26" name="variedTendencyOnDead">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="429" parent="26" name="StunResist">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="430" parent="26" name="HorrorResist">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="431" parent="26" name="CaptureResist">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="432" parent="26" name="KnockBackResist">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="433" parent="26" name="KnockDownResist">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="434" parent="26" name="StandDownResist">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="435" parent="26" name="ActiveCondition">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="436" parent="26" name="MaxCriticalRate">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="437" parent="26" name="MaxAttackSpeed">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="438" parent="26" name="MaxMoveSpeed">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="439" parent="26" name="MaxCastingSpeed">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="440" parent="26" name="MaxFishingLuck">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="441" parent="26" name="MaxCollectionLuck">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="442" parent="26" name="MaxDropItemLuck">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="443" parent="26" name="StunGauge">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="444" parent="26" name="en_DisplayName">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="445" parent="26" name="en_CharacterTitle">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <index id="446" parent="26" name="CharKind">
+      <columns>CharKind</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="447" parent="26" name="GradeType">
+      <columns>GradeType</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="448" parent="26" name="Index_id">
+      <columns>Index_id</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <index id="449" parent="26" name="Level">
+      <columns>Level</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="450" parent="26" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <key id="451" parent="26" name="Index_id">
+      <columns>Index_id</columns>
+      <underlying-index>Index_id</underlying-index>
+    </key>
+    <column id="452" parent="27" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="453" parent="27" name="answer_comm">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="454" parent="27" name="id_autor">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="455" parent="27" name="ru_text">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="456" parent="27" name="en_text">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="457" parent="27" name="cat_item">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="458" parent="27" name="id_item">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="459" parent="27" name="data">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="460" parent="27" name="positive">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="461" parent="27" name="negative">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <key id="462" parent="27" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="463" parent="28" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="464" parent="28" name="cat">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="465" parent="28" name="result">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="466" parent="28" name="lucky_result">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="467" parent="28" name="item1">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="468" parent="28" name="col1">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="469" parent="28" name="item2">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="470" parent="28" name="col2">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="471" parent="28" name="item3">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="472" parent="28" name="col3">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="473" parent="28" name="item4">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="474" parent="28" name="col4">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="475" parent="28" name="item5">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="476" parent="28" name="col5">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="477" parent="28" name="likes">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="478" parent="28" name="lvl">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <key id="479" parent="28" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="480" parent="29" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="481" parent="29" name="index_id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="482" parent="29" name="npc">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="483" parent="29" name="conditions">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="484" parent="29" name="function">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <key id="485" parent="29" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="486" parent="30" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="487" parent="30" name="Index_id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="488" parent="30" name="EquipSetOptionName">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="489" parent="30" name="ru_EquipSetOptionName">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="490" parent="30" name="en_EquipSetOptionName">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="491" parent="30" name="SetType">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="492" parent="30" name="Set_1_Option">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="493" parent="30" name="Set_2_Option">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="494" parent="30" name="Set_3_Option">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="495" parent="30" name="Set_4_Option">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="496" parent="30" name="Set_5_Option">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="497" parent="30" name="Set_6_Option">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="498" parent="30" name="Set_7_Option">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="499" parent="30" name="Set_8_Option">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="500" parent="30" name="Set_9_Option">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="501" parent="30" name="Set_10_Option">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="502" parent="30" name="Set_11_Option">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="503" parent="30" name="Set_12_Option">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="504" parent="30" name="Set_13_Option">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="505" parent="30" name="Set_14_Option">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="506" parent="30" name="Equip_1">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="507" parent="30" name="Equip_2">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="508" parent="30" name="Equip_3">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="509" parent="30" name="Equip_4">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="510" parent="30" name="Equip_5">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="511" parent="30" name="Equip_6">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="512" parent="30" name="Equip_7">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="513" parent="30" name="Equip_8">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="514" parent="30" name="Equip_9">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="515" parent="30" name="Equip_10">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="516" parent="30" name="Equip_11">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="517" parent="30" name="Equip_12">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="518" parent="30" name="Equip_13">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="519" parent="30" name="Equip_14">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="520" parent="30" name="Equip_15">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="521" parent="30" name="Equip_16">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="522" parent="30" name="Equip_17">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="523" parent="30" name="Equip_18">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="524" parent="30" name="Equip_19">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="525" parent="30" name="Equip_20">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="526" parent="30" name="Equip_21">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="527" parent="30" name="Equip_22">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="528" parent="30" name="Equip_23">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="529" parent="30" name="Equip_24">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="530" parent="30" name="Equip_25">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="531" parent="30" name="Equip_26">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="532" parent="30" name="Equip_27">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="533" parent="30" name="Equip_28">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="534" parent="30" name="Equip_29">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="535" parent="30" name="Equip_30">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="536" parent="30" name="Equip_31">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="537" parent="30" name="Equip_32">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="538" parent="30" name="Equip_33">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="539" parent="30" name="Equip_34">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="540" parent="30" name="Equip_35">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="541" parent="30" name="Equip_36">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="542" parent="30" name="Equip_37">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="543" parent="30" name="Equip_38">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="544" parent="30" name="Equip_39">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="545" parent="30" name="Equip_40">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <key id="546" parent="30" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="547" parent="31" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="548" parent="31" name="WaypointKey">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="549" parent="31" name="Name">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="550" parent="31" name="Description">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="551" parent="31" name="ru_Name">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="552" parent="31" name="ru_Description">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="553" parent="31" name="en_Name">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="554" parent="31" name="en_Description">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <key id="555" parent="31" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="556" parent="32" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="557" parent="32" name="id_users">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="558" parent="32" name="cat_page">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="559" parent="32" name="id_page">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <key id="560" parent="32" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="561" parent="33" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="562" parent="33" name="horse1">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="563" parent="33" name="lvl1">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="564" parent="33" name="horse2">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="565" parent="33" name="lvl2">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="566" parent="33" name="resulthorse">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="567" parent="33" name="user_id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="568" parent="33" name="likes">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="569" parent="33" name="type">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <key id="570" parent="33" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="571" parent="34" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="572" parent="34" name="CharacterKey">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="573" parent="34" name="HouseGroup">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="574" parent="34" name="HouseFloor">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="575" parent="34" name="NeedExplorePoint">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="576" parent="34" name="NeedHouseKey">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="577" parent="34" name="AffiliatedTown">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="578" parent="34" name="ParentNode">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="579" parent="34" name="CraftList">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <key id="580" parent="34" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="581" parent="35" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="582" parent="35" name="index_id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="583" parent="35" name="ru_ItemName">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="584" parent="35" name="ItemName">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="585" parent="35" name="Description">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="586" parent="35" name="ru_Description">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="587" parent="35" name="en_ItemName">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="588" parent="35" name="en_Description">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="589" parent="35" name="en_PopupDesc">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="590" parent="35" name="ItemType">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="591" parent="35" name="ItemClassify">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="592" parent="35" name="GradeType">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="593" parent="35" name="EquipType">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="594" parent="35" name="Weight">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="595" parent="35" name="EnduranceLimit">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="596" parent="35" name="IsStack">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="597" parent="35" name="DoApplyDirectly">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="598" parent="35" name="ExpirationPeriod">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="599" parent="35" name="VestedType">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="600" parent="35" name="IsUserVested">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="601" parent="35" name="IsDropable">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="602" parent="35" name="MinLevel">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="603" parent="35" name="MaxLevel">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="604" parent="35" name="SkillNo">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="605" parent="35" name="IsRemovable">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="606" parent="35" name="IsForTrade">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="607" parent="35" name="TradeType">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="608" parent="35" name="DestroyProbability">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="609" parent="35" name="OriginalPrice">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="610" parent="35" name="SellPriceToNpc">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="611" parent="35" name="RepairPrice">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="612" parent="35" name="RepairTime">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="613" parent="35" name="Character_Key">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="614" parent="35" name="IconImageFile">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="615" parent="35" name="WeaponMaterial">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="616" parent="35" name="ArmorMaterial">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="617" parent="35" name="ItemMaterial">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="618" parent="35" name="ItemAccessLevel">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="619" parent="35" name="ContentsEventType">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="620" parent="35" name="CommerceType">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="621" parent="35" name="CollectToolType">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="622" parent="35" name="CollectTime">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="623" parent="35" name="TargetType">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="624" parent="35" name="IsTargetAlive">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="625" parent="35" name="ItemActionNumber">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="626" parent="35" name="PopupDesc">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="627" parent="35" name="ru_PopupDesc">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="628" parent="35" name="ExchangePosition">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="629" parent="35" name="NeedContribute">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="630" parent="35" name="IsCash">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="631" parent="35" name="ProductCategory">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="632" parent="35" name="isGuildStockable">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="633" parent="35" name="basePriceForItemMarket">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="634" parent="35" name="minestPercentForItemMarket">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="635" parent="35" name="maxRegisterCountForItemMarket">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="636" parent="35" name="IsDyeable">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="637" parent="35" name="IsNavigation">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="638" parent="35" name="IsNotifyWorld">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="639" parent="35" name="CraftResultItem">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="640" parent="35" name="IsPersonalTrade">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="641" parent="35" name="wapon">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+      <default-expression>&apos;none&apos;</default-expression>
+    </column>
+    <column id="642" parent="35" name="armor">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+      <default-expression>&apos;none&apos;</default-expression>
+    </column>
+    <index id="643" parent="35" name="armor">
+      <columns>armor</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="644" parent="35" name="EquipType">
+      <columns>EquipType</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="645" parent="35" name="index_id">
+      <columns>index_id</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <index id="646" parent="35" name="IsPersonalTrade">
+      <columns>IsPersonalTrade</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="647" parent="35" name="ItemClassify">
+      <columns>ItemClassify</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="648" parent="35" name="ItemType">
+      <columns>ItemType</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="649" parent="35" name="wapon">
+      <columns>wapon</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="650" parent="35" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <key id="651" parent="35" name="index_id">
+      <columns>index_id</columns>
+      <underlying-index>index_id</underlying-index>
+    </key>
+    <column id="652" parent="36" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="653" parent="36" name="Index_id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="654" parent="36" name="ExchangeType">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="655" parent="36" name="ProductDataType">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="656" parent="36" name="CraftingTime">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="657" parent="36" name="ItemIndex0">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="658" parent="36" name="ItemCount0">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="659" parent="36" name="ItemIndex1">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="660" parent="36" name="ItemCount1">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="661" parent="36" name="ItemIndex2">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="662" parent="36" name="ItemCount2">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="663" parent="36" name="ItemIndex3">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="664" parent="36" name="ItemCount3">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="665" parent="36" name="ItemIndex4">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="666" parent="36" name="ItemCount4">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="667" parent="36" name="ItemIndex5">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="668" parent="36" name="ItemCount5">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="669" parent="36" name="ItemDropID">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="670" parent="36" name="NpcWorkerDropIDForLuck">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="671" parent="36" name="ReciepeResultIcon">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="672" parent="36" name="PlantDescription">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="673" parent="36" name="PlantDetailDescription">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="674" parent="36" name="ru_PlantDescription">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="675" parent="36" name="ru_PlantDetailDescription">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="676" parent="36" name="en_PlantDescription">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="677" parent="36" name="en_PlantDetailDescription">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <key id="678" parent="36" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="679" parent="37" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="680" parent="37" name="ItemMainGroupKey">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="681" parent="37" name="DoSelectOnlyOne">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="682" parent="37" name="RefreshStartHour">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="683" parent="37" name="RefreshInterval">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="684" parent="37" name="PlantCraftResultCount">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="685" parent="37" name="SelectRate0">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="686" parent="37" name="Condition0">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="687" parent="37" name="ItemSubGroupKey0">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="688" parent="37" name="SelectRate1">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="689" parent="37" name="Condition1">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="690" parent="37" name="ItemSubGroupKey1">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="691" parent="37" name="SelectRate2">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="692" parent="37" name="Condition2">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="693" parent="37" name="ItemSubGroupKey2">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="694" parent="37" name="SelectRate3">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="695" parent="37" name="Condition3">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="696" parent="37" name="ItemSubGroupKey3">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <key id="697" parent="37" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="698" parent="38" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="699" parent="38" name="ItemMainGroupKey">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="700" parent="38" name="DoSelectOnlyOne">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="701" parent="38" name="RefreshStartHour">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="702" parent="38" name="RefreshInterval">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="703" parent="38" name="PlantCraftResultCount">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="704" parent="38" name="SelectRate0">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="705" parent="38" name="Condition0">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="706" parent="38" name="ItemSubGroupKey0">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="707" parent="38" name="SelectRate1">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="708" parent="38" name="Condition1">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="709" parent="38" name="ItemSubGroupKey1">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="710" parent="38" name="SelectRate2">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="711" parent="38" name="Condition2">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="712" parent="38" name="ItemSubGroupKey2">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="713" parent="38" name="SelectRate3">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="714" parent="38" name="Condition3">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="715" parent="38" name="ItemSubGroupKey3">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <key id="716" parent="38" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="717" parent="39" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="718" parent="39" name="key_id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="719" parent="39" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="720" parent="39" name="icon">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="721" parent="39" name="type">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <key id="722" parent="39" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="723" parent="40" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="724" parent="40" name="cat_id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="725" parent="40" name="icon">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="726" parent="40" name="ru_name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="727" parent="40" name="name">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="728" parent="40" name="en_name">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="729" parent="40" name="item1">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="730" parent="40" name="item2">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="731" parent="40" name="item3">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="732" parent="40" name="item4">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="733" parent="40" name="item5">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="734" parent="40" name="item6">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="735" parent="40" name="item7">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="736" parent="40" name="item8">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="737" parent="40" name="item9">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="738" parent="40" name="item10">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="739" parent="40" name="item11">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="740" parent="40" name="item12">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="741" parent="40" name="item13">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="742" parent="40" name="item14">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <key id="743" parent="40" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="744" parent="41" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="745" parent="41" name="cat_id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="746" parent="41" name="icon">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="747" parent="41" name="ru_name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="748" parent="41" name="name">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="749" parent="41" name="en_name">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="750" parent="41" name="item1">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="751" parent="41" name="item2">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="752" parent="41" name="item3">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="753" parent="41" name="item4">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="754" parent="41" name="item5">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="755" parent="41" name="item6">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="756" parent="41" name="item7">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="757" parent="41" name="item8">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="758" parent="41" name="item9">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="759" parent="41" name="item10">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="760" parent="41" name="item11">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="761" parent="41" name="item12">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="762" parent="41" name="item13">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="763" parent="41" name="item14">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="764" parent="41" name="ru_name1">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="765" parent="41" name="en_name1">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="766" parent="41" name="icon1">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="767" parent="41" name="ru_name2">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="768" parent="41" name="en_name2">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="769" parent="41" name="icon2">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="770" parent="41" name="ru_name3">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="771" parent="41" name="en_name3">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="772" parent="41" name="icon3">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="773" parent="41" name="ru_name4">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="774" parent="41" name="en_name4">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="775" parent="41" name="icon4">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="776" parent="41" name="ru_name5">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="777" parent="41" name="en_name5">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="778" parent="41" name="icon5">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="779" parent="41" name="ru_name6">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="780" parent="41" name="en_name6">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="781" parent="41" name="icon6">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="782" parent="41" name="ru_name7">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="783" parent="41" name="en_name7">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="784" parent="41" name="icon7">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="785" parent="41" name="ru_name8">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="786" parent="41" name="en_name8">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="787" parent="41" name="icon8">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="788" parent="41" name="ru_name9">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="789" parent="41" name="en_name9">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="790" parent="41" name="icon9">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="791" parent="41" name="ru_name10">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="792" parent="41" name="en_name10">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="793" parent="41" name="icon10">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="794" parent="41" name="ru_name11">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="795" parent="41" name="en_name11">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="796" parent="41" name="icon11">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="797" parent="41" name="ru_name12">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="798" parent="41" name="en_name12">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="799" parent="41" name="icon12">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="800" parent="41" name="ru_name13">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="801" parent="41" name="en_name13">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="802" parent="41" name="icon13">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="803" parent="41" name="ru_name14">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="804" parent="41" name="en_name14">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="805" parent="41" name="icon14">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <key id="806" parent="41" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="807" parent="42" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="808" parent="42" name="ItemSubGroupKey">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="809" parent="42" name="ItemKey">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="810" parent="42" name="EnchantLevel">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="811" parent="42" name="SelectRate">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="812" parent="42" name="MinCount">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="813" parent="42" name="MaxCount">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="814" parent="42" name="IntimacyVariation">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="815" parent="42" name="ExplorationPoint">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <key id="816" parent="42" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="817" parent="43" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="818" parent="43" name="ItemSubGroupKey">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="819" parent="43" name="ItemKey">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="820" parent="43" name="EnchantLevel">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="821" parent="43" name="SelectRate">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="822" parent="43" name="MinCount">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="823" parent="43" name="MaxCount">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="824" parent="43" name="IntimacyVariation">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="825" parent="43" name="ExplorationPoint">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <key id="826" parent="43" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="827" parent="44" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="828" parent="44" name="Key_id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="829" parent="44" name="LearningType">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="830" parent="44" name="SelectRate">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="831" parent="44" name="KnowledgeIndex">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <key id="832" parent="44" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="833" parent="45" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="834" parent="45" name="id_comm">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="835" parent="45" name="id_user">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <key id="836" parent="45" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="837" parent="46" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="838" parent="46" name="id_fus">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="839" parent="46" name="id_user">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <key id="840" parent="46" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="841" parent="47" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="842" parent="47" name="id_recipe">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="843" parent="47" name="base">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="844" parent="47" name="id_user">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <key id="845" parent="47" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="846" parent="48" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="847" parent="48" name="id_recipe">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="848" parent="48" name="id_user">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <key id="849" parent="48" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="850" parent="49" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="851" parent="49" name="MaterialItem1">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="852" parent="49" name="MaterialItemCount1">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="853" parent="49" name="MaterialItem2">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="854" parent="49" name="MaterialItemCount2">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="855" parent="49" name="MaterialItem3">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="856" parent="49" name="MaterialItemCount3">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="857" parent="49" name="MaterialItem4">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="858" parent="49" name="MaterialItemCount4">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="859" parent="49" name="MaterialItem5">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="860" parent="49" name="MaterialItemCount5">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="861" parent="49" name="ResultDropGroup">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="862" parent="49" name="text">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="863" parent="49" name="CheckTime">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="864" parent="49" name="SuccessPercent">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="865" parent="49" name="ActionName">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <key id="866" parent="49" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="867" parent="50" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="868" parent="50" name="itemKey">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="869" parent="50" name="type">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="870" parent="50" name="MaterialItem1">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="871" parent="50" name="MaterialItem2">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="872" parent="50" name="MaterialItem3">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="873" parent="50" name="MaterialItem4">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="874" parent="50" name="MaterialItem5">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <key id="875" parent="50" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="876" parent="51" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="877" parent="51" name="old_id_markers">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="878" parent="51" name="x">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="879" parent="51" name="y">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="880" parent="51" name="way">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="881" parent="51" name="ru_name">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="882" parent="51" name="name">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="883" parent="51" name="en_name">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="884" parent="51" name="ru_descr">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="885" parent="51" name="descr">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="886" parent="51" name="en_descr">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="887" parent="51" name="kind">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="888" parent="51" name="is_main">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="889" parent="51" name="point">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="890" parent="51" name="money">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="891" parent="51" name="territory_id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="892" parent="51" name="is_safe">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="893" parent="51" name="is_war">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="894" parent="51" name="ru_name_territory">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="895" parent="51" name="ru_name_country">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="896" parent="51" name="control_npc">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="897" parent="51" name="en_name_territory">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="898" parent="51" name="en_name_country">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <index id="899" parent="51" name="way">
+      <columns>way</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="900" parent="51" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="901" parent="52" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="902" parent="52" name="id_1">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="903" parent="52" name="id_2">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <key id="904" parent="52" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="905" parent="53" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="906" parent="53" name="id_point">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="907" parent="53" name="item_id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="908" parent="53" name="item_img">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="909" parent="53" name="item_name">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="910" parent="53" name="item_text">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="911" parent="53" name="lack">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="912" parent="53" name="price">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="913" parent="53" name="weight">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <key id="914" parent="53" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="915" parent="54" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="916" parent="54" name="id_point">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="917" parent="54" name="item_id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="918" parent="54" name="item_img">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="919" parent="54" name="ru_item_name">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="920" parent="54" name="ru_item_text">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="921" parent="54" name="en_item_name">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="922" parent="54" name="en_item_text">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="923" parent="54" name="lack">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="924" parent="54" name="price">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="925" parent="54" name="weight">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <index id="926" parent="54" name="id_point">
+      <columns>id_point</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="927" parent="54" name="item_id">
+      <columns>item_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="928" parent="54" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="929" parent="55" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="930" parent="55" name="index_id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="931" parent="55" name="card_id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="932" parent="55" name="x">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="933" parent="55" name="y">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="934" parent="55" name="ru_name">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="935" parent="55" name="name">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="936" parent="55" name="ru_descr">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="937" parent="55" name="img">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="938" parent="55" name="ru_proff">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="939" parent="55" name="theme">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="940" parent="55" name="en_name">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="941" parent="55" name="en_descr">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="942" parent="55" name="en_proff">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <index id="943" parent="55" name="index_id">
+      <columns>index_id</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="944" parent="55" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <key id="945" parent="55" name="index_id">
+      <columns>index_id</columns>
+      <underlying-index>index_id</underlying-index>
+    </key>
+    <column id="946" parent="56" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="947" parent="56" name="index_id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="948" parent="56" name="card_id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="949" parent="56" name="x">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="950" parent="56" name="y">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="951" parent="56" name="ru_name">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="952" parent="56" name="name">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="953" parent="56" name="ru_descr">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="954" parent="56" name="img">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="955" parent="56" name="ru_proff">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="956" parent="56" name="theme">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="957" parent="56" name="en_name">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="958" parent="56" name="en_descr">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="959" parent="56" name="en_proff">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <key id="960" parent="56" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="961" parent="57" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="962" parent="57" name="ru_name">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="963" parent="57" name="en_name">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="964" parent="57" name="coords">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="965" parent="57" name="item_id">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="966" parent="57" name="type">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <key id="967" parent="57" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="968" parent="58" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="969" parent="58" name="x">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="970" parent="58" name="y">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="971" parent="58" name="name">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="972" parent="58" name="id_item">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="973" parent="58" name="user_id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="974" parent="58" name="type">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <key id="975" parent="58" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="976" parent="59" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="977" parent="59" name="x">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="978" parent="59" name="y">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="979" parent="59" name="name">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="980" parent="59" name="type">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="981" parent="59" name="user_type">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="982" parent="59" name="user_id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="983" parent="59" name="public">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="984" parent="59" name="time">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <key id="985" parent="59" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="986" parent="60" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="987" parent="60" name="id_result">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="988" parent="60" name="id_result_icon">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="989" parent="60" name="ru_ItemName_result">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="990" parent="60" name="en_ItemName_result">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="991" parent="60" name="ru_Description_result">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="992" parent="60" name="en_Description_result">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="993" parent="60" name="id_lucky_result">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="994" parent="60" name="id_lucky_result_icon">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="995" parent="60" name="ru_ItemName_lucky_result">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="996" parent="60" name="en_ItemName_lucky_result">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="997" parent="60" name="ru_Description_lucky_result">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="998" parent="60" name="en_Description_lucky_result">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="999" parent="60" name="id_item1">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1000" parent="60" name="ru_ItemName_item1">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1001" parent="60" name="en_ItemName_item1">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1002" parent="60" name="icon_item1">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1003" parent="60" name="col1">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1004" parent="60" name="id_item2">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1005" parent="60" name="ru_ItemName_item2">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1006" parent="60" name="en_ItemName_item2">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1007" parent="60" name="icon_item2">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1008" parent="60" name="col2">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1009" parent="60" name="id_item3">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1010" parent="60" name="ru_ItemName_item3">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1011" parent="60" name="en_ItemName_item3">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1012" parent="60" name="icon_item3">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1013" parent="60" name="col3">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1014" parent="60" name="id_item4">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1015" parent="60" name="ru_ItemName_item4">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1016" parent="60" name="en_ItemName_item4">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1017" parent="60" name="icon_item4">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1018" parent="60" name="col4">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1019" parent="60" name="id_item5">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1020" parent="60" name="ru_ItemName_item5">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1021" parent="60" name="en_ItemName_item5">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1022" parent="60" name="icon_item5">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1023" parent="60" name="col5">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1024" parent="60" name="cat">
+      <mandatory>1</mandatory>
+      <data-type>int(250)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="1025" parent="60" name="lvl">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="1026" parent="60" name="likes">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="1027" parent="60" name="shows">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <default-expression>&apos;1&apos;</default-expression>
+    </column>
+    <key id="1028" parent="60" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="1029" parent="61" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="1030" parent="61" name="id_result">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1031" parent="61" name="id_result_icon">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1032" parent="61" name="ru_ItemName_result">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1033" parent="61" name="en_ItemName_result">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1034" parent="61" name="ru_Description_result">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1035" parent="61" name="en_Description_result">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1036" parent="61" name="id_lucky_result">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1037" parent="61" name="id_lucky_result_icon">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1038" parent="61" name="ru_ItemName_lucky_result">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1039" parent="61" name="en_ItemName_lucky_result">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1040" parent="61" name="ru_Description_lucky_result">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1041" parent="61" name="en_Description_lucky_result">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1042" parent="61" name="id_item1">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1043" parent="61" name="ru_ItemName_item1">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1044" parent="61" name="en_ItemName_item1">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1045" parent="61" name="icon_item1">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1046" parent="61" name="col1">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1047" parent="61" name="id_item2">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1048" parent="61" name="ru_ItemName_item2">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1049" parent="61" name="en_ItemName_item2">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1050" parent="61" name="icon_item2">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1051" parent="61" name="col2">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1052" parent="61" name="id_item3">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1053" parent="61" name="ru_ItemName_item3">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1054" parent="61" name="en_ItemName_item3">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1055" parent="61" name="icon_item3">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1056" parent="61" name="col3">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1057" parent="61" name="id_item4">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1058" parent="61" name="ru_ItemName_item4">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1059" parent="61" name="en_ItemName_item4">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1060" parent="61" name="icon_item4">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1061" parent="61" name="col4">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1062" parent="61" name="id_item5">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1063" parent="61" name="ru_ItemName_item5">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1064" parent="61" name="en_ItemName_item5">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1065" parent="61" name="icon_item5">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1066" parent="61" name="col5">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1067" parent="61" name="cat">
+      <mandatory>1</mandatory>
+      <data-type>int(250)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="1068" parent="61" name="lvl">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="1069" parent="61" name="likes">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="1070" parent="61" name="shows">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <default-expression>&apos;1&apos;</default-expression>
+    </column>
+    <key id="1071" parent="61" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="1072" parent="62" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="1073" parent="62" name="Index_id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1074" parent="62" name="GroupNo">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="1075" parent="62" name="SkillNo">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <key id="1076" parent="62" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="1077" parent="63" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="1078" parent="63" name="PetExpTableKey">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1079" parent="63" name="Level">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1080" parent="63" name="Exp">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <key id="1081" parent="63" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="1082" parent="64" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="1083" parent="64" name="Race">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1084" parent="64" name="Kind">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1085" parent="64" name="Tier">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1086" parent="64" name="Color">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1087" parent="64" name="SelectRate_0">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1088" parent="64" name="SelectCharacterKey_0">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1089" parent="64" name="SelectRate_1">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1090" parent="64" name="SelectCharacterKey_1">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1091" parent="64" name="SelectRate_2">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1092" parent="64" name="SelectCharacterKey_2">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1093" parent="64" name="SelectRate_3">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1094" parent="64" name="SelectCharacterKey_3">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1095" parent="64" name="SelectRate_4">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1096" parent="64" name="SelectCharacterKey_4">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1097" parent="64" name="SelectRate_5">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1098" parent="64" name="SelectCharacterKey_5">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1099" parent="64" name="SelectRate_6">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1100" parent="64" name="SelectCharacterKey_6">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1101" parent="64" name="SelectRate_7">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1102" parent="64" name="SelectCharacterKey_7">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1103" parent="64" name="SelectRate_8">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1104" parent="64" name="SelectCharacterKey_8">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1105" parent="64" name="SelectRate_9">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1106" parent="64" name="SelectCharacterKey_9">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <key id="1107" parent="64" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="1108" parent="65" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="1109" parent="65" name="ColorKey0">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1110" parent="65" name="ColorKey1">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1111" parent="65" name="ResultColorKey">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <key id="1112" parent="65" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="1113" parent="66" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="1114" parent="66" name="PetSkillNo">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1115" parent="66" name="PetSkillType">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1116" parent="66" name="Level">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1117" parent="66" name="Param0">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1118" parent="66" name="Param1">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <key id="1119" parent="66" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="1120" parent="67" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="1121" parent="67" name="SkillNo">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1122" parent="67" name="SkillName">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1123" parent="67" name="IconImageFile">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1124" parent="67" name="text">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <key id="1125" parent="67" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="1126" parent="68" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="1127" parent="68" name="CharacterKey">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1128" parent="68" name="Race">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1129" parent="68" name="Kind">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1130" parent="68" name="Tier">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1131" parent="68" name="Color">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1132" parent="68" name="RequireEXPType">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1133" parent="68" name="Level">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1134" parent="68" name="Hunger">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1135" parent="68" name="Skill_0">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1136" parent="68" name="Skill_1">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1137" parent="68" name="EquipSkill_1">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1138" parent="68" name="EquipSkill_2">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1139" parent="68" name="EquipSkill_3">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1140" parent="68" name="EquipSkill_4">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1141" parent="68" name="EquipSkill_5">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1142" parent="68" name="EquipSkill_6">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1143" parent="68" name="EquipSkill_7">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1144" parent="68" name="EquipSkill_8">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1145" parent="68" name="EquipSkill_9">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1146" parent="68" name="EquipSkill_10">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1147" parent="68" name="EquipSkill_11">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1148" parent="68" name="EquipSkill_12">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1149" parent="68" name="EquipSkill_13">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1150" parent="68" name="EquipSkill_14">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1151" parent="68" name="EquipSkill_0">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1152" parent="68" name="IconImageFile1">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <key id="1153" parent="68" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="1154" parent="69" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="1155" parent="69" name="CharacterKey">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1156" parent="69" name="MoveSpeed">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1157" parent="69" name="CharacterFaceIcon">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1158" parent="69" name="ActionPoint">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1159" parent="69" name="Luck">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1160" parent="69" name="MoveSpeedAddRateMin">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1161" parent="69" name="MoveSpeedAddRateMax">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1162" parent="69" name="LuckAddRateMin">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1163" parent="69" name="LuckAddRateMax">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1164" parent="69" name="WorkingEfficiencyAddRateMin">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1165" parent="69" name="WorkingEfficiencyAddRateMax">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1166" parent="69" name="DefaultSkillKey">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1167" parent="69" name="WorkingEfficiency">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1168" parent="69" name="Lv0">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1169" parent="69" name="Lv1">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1170" parent="69" name="Lv2">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1171" parent="69" name="Lv3">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1172" parent="69" name="Lv4">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1173" parent="69" name="Lv5">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1174" parent="69" name="Lv6">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1175" parent="69" name="Lv7">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1176" parent="69" name="Lv8">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1177" parent="69" name="Lv9">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1178" parent="69" name="Lv10">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1179" parent="69" name="Lv11">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1180" parent="69" name="Lv12">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1181" parent="69" name="Lv13">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1182" parent="69" name="Lv14">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1183" parent="69" name="Lv15">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1184" parent="69" name="Lv16">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1185" parent="69" name="Lv17">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1186" parent="69" name="Lv18">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1187" parent="69" name="Lv19">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1188" parent="69" name="Lv20">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1189" parent="69" name="Lv21">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1190" parent="69" name="Lv22">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1191" parent="69" name="Lv23">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1192" parent="69" name="Lv24">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1193" parent="69" name="Lv25">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1194" parent="69" name="Lv26">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1195" parent="69" name="Lv27">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1196" parent="69" name="Lv28">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1197" parent="69" name="Lv29">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1198" parent="69" name="Lv30">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <key id="1199" parent="69" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="1200" parent="70" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="1201" parent="70" name="Key_id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1202" parent="70" name="GroupKey">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1203" parent="70" name="Name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1204" parent="70" name="IconPath">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1205" parent="70" name="Description">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1206" parent="70" name="ru_Name">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1207" parent="70" name="ru_Description">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1208" parent="70" name="en_Name">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1209" parent="70" name="en_Description">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <key id="1210" parent="70" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="1211" parent="71" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="1212" parent="71" name="QuestGroup">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1213" parent="71" name="QuestID">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1214" parent="71" name="SelectType">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1215" parent="71" name="QuestType">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1216" parent="71" name="isUserBaseQuest">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1217" parent="71" name="RemoveQuest">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1218" parent="71" name="UnableToGiveup">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1219" parent="71" name="DoGuide">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1220" parent="71" name="Region">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1221" parent="71" name="IsEscortQuest">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1222" parent="71" name="Title">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1223" parent="71" name="Desc_text">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1224" parent="71" name="RepeatTime">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1225" parent="71" name="OrderNpc">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1226" parent="71" name="OrderNpcDialogIndex">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1227" parent="71" name="RecommendLevel">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="1228" parent="71" name="AcceptConditions">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1229" parent="71" name="AcceptPushItem">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1230" parent="71" name="CompleteNpc">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1231" parent="71" name="CompleteNpcDialogIndex">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1232" parent="71" name="CompleteDisplay">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1233" parent="71" name="QuestIcon">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1234" parent="71" name="GuideAutoErase">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1235" parent="71" name="PositionAndRadius">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1236" parent="71" name="CompleteCondition">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1237" parent="71" name="CompleteConditionText">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1238" parent="71" name="AddDrop">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1239" parent="71" name="ExpectedPrice">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1240" parent="71" name="BaseReward">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1241" parent="71" name="SelectReward">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1242" parent="71" name="AcceptDialog">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1243" parent="71" name="NotAcceptDialog">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1244" parent="71" name="AcceptDungeon">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1245" parent="71" name="ProgressDialog">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1246" parent="71" name="CompleteDialog">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1247" parent="71" name="ContentsGroupKey">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1248" parent="71" name="ru_Title">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1249" parent="71" name="ru_Desc_text">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1250" parent="71" name="ru_CompleteDisplay">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1251" parent="71" name="ru_CompleteConditionText">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1252" parent="71" name="ru_AcceptDialog">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1253" parent="71" name="ru_ProgressDialog">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1254" parent="71" name="ru_CompleteDialog">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1255" parent="71" name="en_Title">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1256" parent="71" name="en_Desc_text">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1257" parent="71" name="en_CompleteDisplay">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1258" parent="71" name="en_CompleteConditionText">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1259" parent="71" name="en_AcceptDialog">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1260" parent="71" name="en_ProgressDialog">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1261" parent="71" name="en_CompleteDialog">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <index id="1262" parent="71" name="QuestGroup">
+      <columns>QuestGroup</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="1263" parent="71" name="QuestID">
+      <columns>QuestID</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="1264" parent="71" name="QuestType">
+      <columns>QuestType</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="1265" parent="71" name="SelectType">
+      <columns>SelectType</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="1266" parent="71" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="1267" parent="72" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="1268" parent="72" name="ReceipeKey">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="1269" parent="72" name="Name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="1270" parent="72" name="ru_Name">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1271" parent="72" name="en_Name">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1272" parent="72" name="TransferKey">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="1273" parent="72" name="GroupType">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="1274" parent="72" name="ExchangeKey1">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="1275" parent="72" name="ExchangeKey2">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="1276" parent="72" name="ExchangeKey3">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="1277" parent="72" name="ExchangeKey4">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="1278" parent="72" name="ExchangeKey5">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <key id="1279" parent="72" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="1280" parent="73" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="1281" parent="73" name="col1">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1282" parent="73" name="col2">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1283" parent="73" name="col3">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <key id="1284" parent="73" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="1285" parent="74" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="1286" parent="74" name="CharacterKey">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1287" parent="74" name="Level">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1288" parent="74" name="RequireEXP">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1289" parent="74" name="HP">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1290" parent="74" name="MP">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1291" parent="74" name="possessableWeight">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1292" parent="74" name="AccelerationRate">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1293" parent="74" name="MaxMoveSpeedRate">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1294" parent="74" name="CorneringSpeedRate">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1295" parent="74" name="BrakeSpeedRate">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <key id="1296" parent="74" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="1297" parent="75" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="1298" parent="75" name="index_id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1299" parent="75" name="AverageGrade">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1300" parent="75" name="ResultMinGrade">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1301" parent="75" name="ResultMaxGrade">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <key id="1302" parent="75" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="1303" parent="76" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="1304" parent="76" name="CharacterKey">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1305" parent="76" name="Grade">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1306" parent="76" name="Name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1307" parent="76" name="Color1">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1308" parent="76" name="Color2">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1309" parent="76" name="Color3">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1310" parent="76" name="IsMale">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1311" parent="76" name="MatingCount">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1312" parent="76" name="Lifespan">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1313" parent="76" name="IconImageFile1">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1314" parent="76" name="basePrice">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1315" parent="76" name="PricePerLevel">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1316" parent="76" name="IsTrade">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1317" parent="76" name="ru_Name">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <key id="1318" parent="76" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="1319" parent="77" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="1320" parent="77" name="position">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1321" parent="77" name="text">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1322" parent="77" name="data">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1323" parent="77" name="shows">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <key id="1324" parent="77" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="1325" parent="78" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="1326" parent="78" name="email">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1327" parent="78" name="vk">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <key id="1328" parent="78" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="1329" parent="79" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="1330" parent="79" name="Theme">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1331" parent="79" name="Name">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1332" parent="79" name="ru_Name">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1333" parent="79" name="en_Name">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1334" parent="79" name="Parent">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1335" parent="79" name="IncreaseWP">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1336" parent="79" name="NeedCount">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1337" parent="79" name="IncreaseWP2">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1338" parent="79" name="NeedCount2">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1339" parent="79" name="BookCase">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1340" parent="79" name="isCopyRightAble">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <key id="1341" parent="79" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="1342" parent="80" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="1343" parent="80" name="cat">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="1344" parent="80" name="item">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="1345" parent="80" name="name">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1346" parent="80" name="text">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1347" parent="80" name="user_id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="1348" parent="80" name="shows">
+      <mandatory>1</mandatory>
+      <data-type>varchar(200)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="1349" parent="80" name="test">
+      <mandatory>1</mandatory>
+      <data-type>date|0</data-type>
+    </column>
+    <key id="1350" parent="80" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="1351" parent="81" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="1352" parent="81" name="email">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1353" parent="81" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1354" parent="81" name="pass">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1355" parent="81" name="ava">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1356" parent="81" name="recover_pass">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1357" parent="81" name="isadmin">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="1358" parent="81" name="root">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <key id="1359" parent="81" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="1360" parent="82" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="1361" parent="82" name="user_id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1362" parent="82" name="name">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1363" parent="82" name="type">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1364" parent="82" name="bild">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <key id="1365" parent="82" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="1366" parent="83" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="1367" parent="83" name="base">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1368" parent="83" name="id_recipe">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1369" parent="83" name="id_user">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1370" parent="83" name="col1">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1371" parent="83" name="col2">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1372" parent="83" name="col3">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1373" parent="83" name="col4">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1374" parent="83" name="col5">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1375" parent="83" name="proff">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <key id="1376" parent="83" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="1377" parent="84" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="1378" parent="84" name="id_user">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1379" parent="84" name="class">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1380" parent="84" name="bild">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1381" parent="84" name="lvl">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+      <default-expression>&apos;1&apos;</default-expression>
+    </column>
+    <column id="1382" parent="84" name="points">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="1383" parent="84" name="name">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1384" parent="84" name="text">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1385" parent="84" name="hards">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="1386" parent="84" name="likes">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="1387" parent="84" name="times">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <key id="1388" parent="84" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="1389" parent="85" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="1390" parent="85" name="item_id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1391" parent="85" name="enchant">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="1392" parent="85" name="name">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1393" parent="85" name="b1">
+      <comment>Эффект предмета</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1394" parent="85" name="b2">
+      <comment>Эффект предмета 2</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1395" parent="85" name="b3">
+      <comment>Эффект предмета 3</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1396" parent="85" name="eb1">
+      <comment>Эффект усиления</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1397" parent="85" name="eb2">
+      <comment>Эффект усиления 2</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1398" parent="85" name="eb3">
+      <comment>Эффект усиления 3</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1399" parent="85" name="de1">
+      <comment>Доп. эффект</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1400" parent="85" name="de2">
+      <comment>Доп. эффект 2</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1401" parent="85" name="de3">
+      <comment>Доп. эффект 3</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1402" parent="85" name="ef1">
+      <comment>Особый эффект</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1403" parent="85" name="ef2">
+      <comment>Особый эффект 2</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1404" parent="85" name="ef3">
+      <comment>Особый эффект 3</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1405" parent="85" name="sets">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1406" parent="85" name="sets2">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <index id="1407" parent="85" name="enchant">
+      <columns>enchant</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="1408" parent="85" name="item_id">
+      <columns>item_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="1409" parent="85" name="sets">
+      <columns>sets</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="1410" parent="85" name="sets2">
+      <columns>sets2</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="1411" parent="85" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="1412" parent="86" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="1413" parent="86" name="name">
+      <comment>Название</comment>
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1414" parent="86" name="b21">
+      <comment>Эффект 2 части (1)</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1415" parent="86" name="b22">
+      <comment>Эффект 2 части (2)</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1416" parent="86" name="b23">
+      <comment>Эффект 2 части (3)</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1417" parent="86" name="b31">
+      <comment>Эффект 3 части (1)</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1418" parent="86" name="b32">
+      <comment>Эффект 3 части (2)</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1419" parent="86" name="b33">
+      <comment>Эффект 3 части (3)</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1420" parent="86" name="b41">
+      <comment>Эффект 4 части (1)</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1421" parent="86" name="b42">
+      <comment>Эффект 4 части (2)</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="1422" parent="86" name="b43">
+      <comment>Эффект 4 части (3)</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <key id="1423" parent="86" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+  </database-model>
+</dataSource>
