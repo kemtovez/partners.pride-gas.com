@@ -1,0 +1,62 @@
+#calendar_page {
+  padding: 45px 0px;
+  h1 {
+    font: bold 25px / 1.2 "PT Sans", Helvetica, Arial, sans-serif;
+    margin-bottom: 28px;
+  }
+  .user_data_calendar {
+    width: 537px;
+  }
+  .data_table_work {
+    display: block;
+    ul {
+      li {
+        padding: 7px 7px 7px 15px;
+        border-radius: 5px;
+        position: relative;
+        &:nth-child(odd) {
+          background: #17222b;
+        }
+        label {
+          font-weight: bold;
+          width: 215px;
+          display: inline-block;
+          padding-right: 15px;
+        }
+        span {
+          vertical-align: top;
+        }
+        p {
+          vertical-align: top;
+          display: inline-block;
+          width: 215px;
+          input {
+            border: none;
+            box-shadow: none;
+            padding: 0px;
+            text-align: center;
+          }
+        }
+        ul {
+          vertical-align: top;
+          display: inline-block;
+          width: 215px;
+          li {
+            padding: 0px;
+            list-style: initial;
+            &:nth-child(odd) {
+              background: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  .update_time_work {
+    color: #09d62e;
+    cursor: pointer;
+    padding: 2px;
+    display: none;
+    margin-left: 5px;
+  }
+}

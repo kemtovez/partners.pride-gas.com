@@ -2,19 +2,62 @@
     <!-- ------- MODAL --------- -->
     <!-- ------- HOME ------------ -->
     <?php
-    $my_global_reyting = 4.5;
-    $my_reyting1 = 4.5;
-    $my_reyting2 = 2;
-    $my_reyting3 = 3.8;
+    $my_stat_feed_users = 0;
+    $my_stat_work_data_start = '---';
+    $my_stat_work_data_end = '---';
+    $my_stat_work_0 = 0;
+    $my_stat_work_1 = 0;
+    $my_stat_work_2 = 0;
+    $my_stat_work_3 = 0;
 
-    $my_reyting_in_ukraine = 4;
-    $my_reyting_in_region = 2;
+$arr_work_data = array();
+
+    $rs_gbo = mysqli_query($link, "SELECT * FROM `srm_works` WHERE `id_sto`='$my_id'");
+    while($row_gbo = mysqli_fetch_array($rs_gbo, MYSQLI_ASSOC)) {
+        $id_work = $row_gbo['id'];
+        $type_work = $row_gbo['type'];
+        $rs_gbo_log = mysqli_query($link, "SELECT * FROM `srm_works_data_log` WHERE `id_work`='$id_work' AND `type_work`='4'");
+        $kol_rs_gbo_log = mysqli_num_rows($rs_gbo_log);
+        if($kol_rs_gbo_log>0) {
+            while($row_gbo_log = mysqli_fetch_array($rs_gbo_log, MYSQLI_ASSOC)) {
+                if($type_work==0) {
+                    $my_stat_work_0 = $my_stat_work_0 + 1;
+                }
+                if($type_work==1) {
+                    $my_stat_work_1 = $my_stat_work_1 + 1;
+                }
+                if($type_work==2) {
+                    $my_stat_work_2 = $my_stat_work_2 + 1;
+                }
+                if($type_work==3) {
+                    $my_stat_work_3 = $my_stat_work_3 + 1;
+                }
+                $arr_work_data[] = $row_gbo_log['time'];
+            }
+        }
+//---------------------
+        $rs_feed = mysqli_query($link, "SELECT * FROM `srm_users_feedback` WHERE `id_work`='$id_work'");
+    $kol_rs_feed = mysqli_num_rows($rs_feed);
+        $my_stat_feed_users = $my_stat_feed_users + $kol_rs_feed;
+    }
+
+    $my_stat_work_all = $my_stat_work_0 + $my_stat_work_1 + $my_stat_work_2 + $my_stat_work_3;
+    sort($arr_work_data);
+    $my_stat_work_data_start = date('d.m.Y', $arr_work_data[0]);
+    rsort($arr_work_data);
+    $my_stat_work_data_end = date('d.m.Y', $arr_work_data[0]);
+
+    $my_global_reyting = round($my_global_reyting, 1);
     ?>
+    <script>
+
+    </script>
     <div class="area">
         <div class="profile_box1">
             <div class="promo_photo_box">
-                <div class="my_promo_photo" style="background: url(/uploads/promo_img/<?php echo $my_promo_img; ?>) center no-repeat;">
-                    <span class="upload_promo_image"></span>
+                <div class="my_promo_photo" style="background: url(<?php echo $my_promo_img; ?>) center no-repeat;">
+                    <div class="my_promo_photo_box" id="my_promo_photo_box"></div>
+                    <span class="upload_promo_image" id="upload_promo_image"></span>
                     <span class="dell_promo_image"></span>
                 </div>
                 <a href="/edit_profile" class="edit_profile_url">Редактировать информацию о СТО</a>
@@ -65,153 +108,139 @@
                       <a href="/add_user" class="buttons green_buttons">Добавить нового клиента и отчёт проделанной работе</a>
                   </div>
               </div>
-            </div>
-        </div>
-
-
-
-<h2><?php echo $my_name; ?><span class="edit_profile"><i class="fa fa-pencil" aria-hidden="true"></i>Редактировать профиль</span></h2>
-        <div class="home_info_box">
-            <div class="user_data">
-                <ul>
-                    <li>
-                        <label>Телефон:</label>
-                        <span name="tel" data="users"><?php echo $my_tel; ?></span>
-                    </li>
-                    <li>
-                        <label>Почта:</label>
-                        <span name="email" data="users"><?php echo $my_email; ?></span>
-                    </li>
-                    <li>
-                        <label>Город:</label>
-                        <span name="sity" data="users"><?php echo $my_sity; ?></span>
-                    </li>
-                    <li>
-                        <label>Регион:</label>
-                        <span name="region" data="users"><?php echo $my_region; ?></span>
-                    </li>
-                    <li>
-                        <label>Марка авто:</label>
-                        <span name="type_car" data="users_cars"><?php echo $my_type_car; ?></span>
-                    </li>
-                    <li>
-                        <label>Модель:</label>
-                        <span name="model_car" data="users_cars"><?php echo $my_model_car; ?></span>
-                    </li>
-                    <li>
-                        <label>Год:</label>
-                        <span name="year_car" data="users_cars"><?php echo $my_year_car; ?></span>
-                    </li>
-                    <li>
-                        <label>Тип двигателя:</label>
-                        <span name="type_motor" data="users_cars"><?php echo $my_type_motor; ?></span>
-                    </li>
-                    <li>
-                        <label>Объём двигателя:</label>
-                        <span name="size_motor" data="users_cars"><?php echo $my_size_motor; ?></span>
-                    </li>
-                    <li>
-                        <label>Мощность двигателя:</label>
-                        <span name="power_motor" data="users_cars"><?php echo $my_power_motor; ?></span>
-                    </li>
-                    <li>
-                        <label>Ваша дата рождения:</label>
-                        <span name="data_bd" data="users"><?php echo $my_data_bd; ?></span>
-                    </li>
-                    <li>
-                        <label>Серийный номер гарантийной книжки:</label>
-                        <span name="garant_book" data="users_cars"><?php echo $my_garant_book; ?></span>
-                    </li>
-                </ul>
-            </div>
-            <div class="sidebar">
-                <button class="buttons blue_buttons new_user_in_auto md-trigger" data-modal="modal-1">У авто новый владелец</button>
-                <hr>
-                <button class="buttons yelow_buttons need_to md-trigger" data-modal="modal-2">Записаться на ТО</button>
-                <button class="buttons yelow_buttons need_help md-trigger" data-modal="modal-3">Записаться на обслуживание</button>
-                <hr>
-                <div class="sale_to">
-                    <h3>Ваша скидка на текущее ТО: </h3>
-                    <span><?php echo $my_discount; ?>%</span>
-                </div>
-                <hr>
-                <div class="send_settings">
-                    <h3>Управление подписками:</h3>
-                    <div class="list_send_settings">
-                        <?php
-                        if($my_send_email=='1') {
-                            echo '<div class="checkbox_box"><input type="checkbox" value="1" name="check" id="send_email" checked /><label for="send_email"></label></div><p><b>Подписаться на новостную рассылку</b></p>';
-                        } else {
-                            echo '<div class="checkbox_box"><input type="checkbox" value="1" name="check" id="send_email" /><label for="send_email"></label></div><p>Подписаться на новостную рассылку</p>';
-                        }
-                        ?>
+                <div class="statistic_work_box">
+                    <div class="left_block">
+                        <h3>Выполнено всего заказов (<?php echo $my_stat_work_all; ?>)</h3>
+                        <div class="statistic_work_data"> с <span><?php echo $my_stat_work_data_start; ?></span> по <span><?php echo $my_stat_work_data_end; ?></span></div>
+                        <ul>
+                            <li>Установок (<?php echo $my_stat_work_0; ?>)</li>
+                            <li>ТО (<?php echo $my_stat_work_1; ?>)</li>
+                            <li>Гарант. обслуживания (<?php echo $my_stat_work_2; ?>)</li>
+                            <li>Ремонт (<?php echo $my_stat_work_3; ?>)</li>
+                        </ul>
                     </div>
-                    <div class="list_send_settings">
-                        <?php
-                        if($my_send_sms=='1') {
-                            echo '<div class="checkbox_box"><input type="checkbox" value="1" name="check" id="send_sms" checked /><label for="send_sms"></label></div><p><b>Оповещать меня по SMS об новых услугах</b></p>';
-                        } else {
-                            echo '<div class="checkbox_box"><input type="checkbox" value="1" name="check" id="send_sms" /><label for="send_sms"></label></div><p>Оповещать меня по SMS об новых услугах</p>';
-                        }
-                        ?>
+                    <div class="right_block">
+                        <h3>Отзывы от клиентов (<?php echo $my_stat_feed_users; ?>)</h3>
+                        <p>Количество обслуживаемых авто в день:<span><?php echo $my_limit_in_day; ?></span></p>
                     </div>
                 </div>
             </div>
         </div>
-        <hr>
-        <div class="users_sto">
-            <h3>Прикреплён к СТО:</h3>
-            <a href="//pride-gas.com/sto/<?php echo $my_sto_id; ?>"><i class="fa fa-wrench" aria-hidden="true"></i><span><?php echo $my_sto_name; ?></span></a>
-            <button class="hate_you md-trigger" data-modal="modal-4"><i class="fa fa-book" aria-hidden="true"></i><span>Книга жалоб и предложений</span></button>
-        </div>
-        <hr>
-         <table class="table_user_work tables">
-            <thead>
-            <tr>
-                <td>Дата</td>
-                <td>Статус</td>
-                <td>Услуга</td>
-                <td>СТО</td>
-                <td></td>
-            </tr>
-            </thead>
-            <tbody>
+<table class="detail_sto_table">
+    <thead>
+    <tr>
+        <td>Адрес:</td>
+        <td>Контакты:</td>
+        <td>График работы:</td>
+        <td>Предоставляемые услуги:</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>
+            <p><?php echo $my_region; ?></p>
+            <p><?php echo $my_sity; ?></p>
+            <p><?php echo $my_street; ?></p>
+        </td>
+        <td>
+            <p><?php echo $my_tel1; ?></p>
+            <p><?php echo $my_tel2; ?></p>
+            <p><?php echo $my_tel3; ?></p>
+            <p><?php echo $my_email; ?></p>
+        </td>
+        <td>
+            <p>пн-пт <?php echo $my_work_day1; ?></p>
+            <p>сб <?php echo $my_work_day2; ?></p>
+            <p>вс <?php echo $my_work_day3; ?></p>
+        </td>
+        <td>
             <?php
-            $rs = mysqli_query($link, "SELECT * FROM `srm_works` WHERE id_user='$my_id' AND id_car='$my_id_car' ORDER BY `id` DESC");
-            while ($row = mysqli_fetch_array($rs, MYSQLI_ASSOC)) {
-                $id_work = $row['id'];
-                $id_sto = $row['id_sto'];
-                $type_work = $row['type'];
-                $name_work = $row['name'];
-                $need_post_work = $row['need_post'];
-                $status_work = 0;
-                $rs2 = mysqli_query($link, "SELECT * FROM `srm_works_data_log` WHERE id_work='$id_work' ORDER BY `time` DESC LIMIT 0,1");
-                while ($row2 = mysqli_fetch_array($rs2, MYSQLI_ASSOC)) {
-                    $time_last_work = date('d.m.y H:i', $row2['time']);
-                    $status_work = $row2['type_work'];
-                }
-                $rs3 = mysqli_query($link, "SELECT * FROM `srm_sto` WHERE id='$id_sto'");
-                while ($row3 = mysqli_fetch_array($rs3, MYSQLI_ASSOC)) {
-                    $name_sto = $row3['name'];
-                    $street_sto = $row3['street'];
-                    $tel1_sto = $row3['tel1'];
-                    $tel2_sto = $row3['tel2'];
-                    $tel3_sto = $row3['tel3'];
-                }
-                echo '<tr>';
-                echo '<td>'.$time_last_work.'</td>';
-                echo '<td><span class="status_work status_work_'.$status_work.'">'.status_work($status_work).'</span> <button data="'.$id_work.'" class="buttons no_opacity_btn ajax_detail_work">Детальнее</button></td>';
-                echo '<td>'.$name_work.'</td>';
-                echo '<td><b>'.$name_sto.'</b><br>'.$street_sto.'<br>'.$tel1_sto.'<br>'.$tel2_sto.'</td>';
-                if($need_post_work==1) {
-                    echo '<td><p>Оставить отзыв и получить <b>скидку до 7%</b> на следующее обслуживание</p><a href="/add_post_work/'.$id_work.'" class="buttons min_yelow_buttons add_post_work">Оставить отзыв</a></td>';
-                } else {
-                    echo '<td></td>';
-                }
-                echo '</tr>';
-            }
+            echo list_sto_service($my_servises);
             ?>
-            </tbody>
-        </table>
+        </td>
+    </tr>
+    </tbody>
+</table>
+<hr>
+        <div class="sto_photo_box">
+            <h3>Фото СТО:</h3>
+            <div class="sto_photo_block">
+                <?php
+                $rs1 = mysqli_query($link, "SELECT * FROM `srm_sto_images` WHERE id_sto='$my_id'");
+                while($row1 = mysqli_fetch_array($rs1, MYSQLI_ASSOC)) {
+                    $id_image = $row1['id'];
+                    $image1 = $row1['image1'];
+                    $thumb1 = $row1['thumb1'];
+                    ?>
+                <div class="sto_photo">
+                    <div class="my_sto_photo_box" id="img_sto_photo1"></div>
+                    <h4>Внешний вид СТО</h4>
+                    <a rel="fancybox" href="<?php echo $row1['image1']; ?>">
+                        <img src="<?php echo $row1['thumb1']; ?>">
+                    </a>
+                    <span class="update_img_sto_photo" id="update_img_sto_photo1"></span>
+                </div>
+                    <div class="sto_photo">
+                        <div class="my_sto_photo_box" id="img_sto_photo2"></div>
+                        <h4>Боксы</h4>
+                        <a rel="fancybox" href="<?php echo $row1['image2']; ?>">
+                            <img src="<?php echo $row1['thumb2']; ?>">
+                        </a>
+                        <span class="update_img_sto_photo" id="update_img_sto_photo2"></span>
+                    </div>
+                    <div class="sto_photo">
+                        <div class="my_sto_photo_box" id="img_sto_photo3"></div>
+                        <h4>Боксы</h4>
+                        <a rel="fancybox" href="<?php echo $row1['image3']; ?>">
+                            <img src="<?php echo $row1['thumb3']; ?>">
+                        </a>
+                        <span class="update_img_sto_photo" id="update_img_sto_photo3"></span>
+                    </div>
+                    <div class="sto_photo">
+                        <div class="my_sto_photo_box" id="img_sto_photo4"></div>
+                        <h4>Боксы</h4>
+                        <a rel="fancybox" href="<?php echo $row1['image4']; ?>">
+                            <img src="<?php echo $row1['thumb4']; ?>">
+                        </a>
+                        <span class="update_img_sto_photo" id="update_img_sto_photo4"></span>
+                    </div>
+                    <div class="sto_photo">
+                        <div class="my_sto_photo_box" id="img_sto_photo5"></div>
+                        <h4>Приёмка</h4>
+                        <a rel="fancybox" href="<?php echo $row1['image5']; ?>">
+                            <img src="<?php echo $row1['thumb5']; ?>">
+                        </a>
+                        <span class="update_img_sto_photo" id="update_img_sto_photo5"></span>
+                    </div>
+                    <div class="sto_photo">
+                        <div class="my_sto_photo_box" id="img_sto_photo6"></div>
+                        <h4>Команда</h4>
+                        <a rel="fancybox" href="<?php echo $row1['image6']; ?>">
+                            <img src="<?php echo $row1['thumb6']; ?>">
+                        </a>
+                        <span class="update_img_sto_photo" id="update_img_sto_photo6"></span>
+                    </div>
+                    <div class="sto_photo">
+                        <div class="my_sto_photo_box" id="img_sto_photo7"></div>
+                        <h4>Фото с авто в работе</h4>
+                        <a rel="fancybox" href="<?php echo $row1['image7']; ?>">
+                            <img src="<?php echo $row1['thumb7']; ?>">
+                        </a>
+                        <span class="update_img_sto_photo" id="update_img_sto_photo7"></span>
+                    </div>
+                    <div class="sto_photo">
+                        <div class="my_sto_photo_box" id="img_sto_photo8"></div>
+                        <h4>Фото с авто в работе</h4>
+                        <a rel="fancybox" href="<?php echo $row1['image8']; ?>">
+                            <img src="<?php echo $row1['thumb8']; ?>">
+                        </a>
+                        <span class="update_img_sto_photo" id="update_img_sto_photo8"></span>
+                    </div>
+                    <?php
+                }
+                ?>
+            </div>
+        </div>
+        </div>
     </div>
-</div>
+

@@ -1,6 +1,14 @@
 jQuery(document).ready(function ($)  {
 //----------ВСПЛЫВАЮЩЕЕ ОКНО
+
+	$('body').on('click', '.md-close', function() {
+		$(this).parent('.md-content-header').parent('.md-content').parent('.md-modal').removeClass("md-show");
+	});
+
+	$('a[rel="fancybox"]').fancybox();
+
 	function openPopup(url) {
+        $('#'+url).html('');
 		$.fancybox({
 			type: 'inline',
 			href: url,
@@ -17,8 +25,6 @@ jQuery(document).ready(function ($)  {
 	var requestSent = false;
 
 	$(".ajax_form").submit(function(e){
-	if(!requestSent) {
-		requestSent = true;
 		e.preventDefault();
 		var m_method = $(this).attr("method");
 		var m_action = $(this).attr("action");
@@ -36,8 +42,7 @@ jQuery(document).ready(function ($)  {
 				console.log(result);
 				if (result.error) {
 					alertify.error(result.error.text);
-				}
-				;
+				};
 				if (result.result) {
 					if (result.result.status == 'ok') {
 						alertify.success(result.result.text);
@@ -49,68 +54,175 @@ jQuery(document).ready(function ($)  {
 						}
 					}
 				}
-				requestSent = false;
 			},
 			complete: function () {
-				requestSent = false;
 				$(".ajax_form").find('button[type="submit"]').show();
 			}
 		});
-	}
 });
-//----------ОЧИСТКА ВСПЛЫВАЮЩЕГО ОКНА
-$('body').on('click', '.fancybox-close', function() {
-$('#popup_box').html('');
-});
-//----------
-// Header
-	$('.shuse_car_block > select').on('change', function() {
-		if (this.value == 'add') {
-			document.location.href = '/add_car';
-		} else {
-			$.ajax({
-				type: 'POST',
-				url: '../cont/change_car.php',
-				data: 'id='+this.value,
-				success: function(result){
-					alertify.success(result);
-					location.reload();
-				}
-			});
-		}
-	});
-// Edit profile
-	$('body').on('click', '.edit_profile', function() {
-		$('.user_data > ul > li').children('.edit_line_pr').remove();
-		$('.user_data > ul > li').each(function(elem) {
-			$val = $(this).children('span').text();
-			$name = $(this).children('span').attr('name');
-			$table = $(this).children('span').attr('data');
-			$html = '<div class="edit_line_pr"><input name="'+$name+'" data="'+$table+'" value="'+$val+'"><span class="save_line_profile"><i class="fa fa-check" aria-hidden="true"></i></span><span class="dell_line_profile"><i class="fa fa-times" aria-hidden="true"></i></span></div>';
-			$(this).append($html);
-		});
-	});
-	$('body').on('click', '.dell_line_profile', function() {
-		$(this).parent('.edit_line_pr').remove();
-	});
-	$('body').on('click', '.save_line_profile', function() {
-		$name = $(this).parent('.edit_line_pr').children('input').attr('name');
-		$value = $(this).parent('.edit_line_pr').children('input').val();
-		$table = $(this).parent('.edit_line_pr').children('input').attr('data');
-		if($value!='') {
-			$(this).parent('.edit_line_pr').parent('li').children('span[name="'+$name+'"]').text($value);
-			$.ajax({
-				type: 'POST',
-				url: '../cont/edit_profile.php',
-				data: 'name='+$name+'&value='+$value+'&table='+$table,
-				success: function(result){
-					alertify.success(result);
 
-					}
-			});
-		}
-	});
-// Checkbox
+    var img_sto_photo1_setting = {
+        uploadUrl:'../cont/img_save_to_file.php',
+        uploadData:{
+            "colum":"1"
+        },
+        cropUrl:'../cont/img_crop_to_file.php',
+        cropData:{
+            "colum":"1"
+        },
+        customUploadButtonId:'update_img_sto_photo1',
+        modal:true,
+        loaderHtml:'<div class="loader bubblingG"><span id="bubblingG_1"></span><span id="bubblingG_2"></span><span id="bubblingG_3"></span></div> ',
+        onAfterImgCrop:function(){ location.reload(); },
+        onError:function(errormessage){ console.log('onError:'+errormessage) }
+    };
+    var img_sto_photo1 = new Croppic('img_sto_photo1', img_sto_photo1_setting);
+
+	var img_sto_photo2_setting = {
+		uploadUrl:'../cont/img_save_to_file.php',
+		uploadData:{
+			"colum":"2"
+		},
+		cropUrl:'../cont/img_crop_to_file.php',
+		cropData:{
+			"colum":"2"
+		},
+		customUploadButtonId:'update_img_sto_photo2',
+		modal:true,
+		loaderHtml:'<div class="loader bubblingG"><span id="bubblingG_1"></span><span id="bubblingG_2"></span><span id="bubblingG_3"></span></div> ',
+		onAfterImgCrop:function(){ location.reload(); },
+		onError:function(errormessage){ console.log('onError:'+errormessage) }
+	};
+	var img_sto_photo2 = new Croppic('img_sto_photo2', img_sto_photo2_setting);
+
+	var img_sto_photo3_setting = {
+		uploadUrl:'../cont/img_save_to_file.php',
+		uploadData:{
+			"colum":"3"
+		},
+		cropUrl:'../cont/img_crop_to_file.php',
+		cropData:{
+			"colum":"3"
+		},
+		customUploadButtonId:'update_img_sto_photo3',
+		modal:true,
+		loaderHtml:'<div class="loader bubblingG"><span id="bubblingG_1"></span><span id="bubblingG_2"></span><span id="bubblingG_3"></span></div> ',
+		onAfterImgCrop:function(){ location.reload(); },
+		onError:function(errormessage){ console.log('onError:'+errormessage) }
+	};
+	var img_sto_photo3 = new Croppic('img_sto_photo3', img_sto_photo3_setting);
+
+	var img_sto_photo4_setting = {
+		uploadUrl:'../cont/img_save_to_file.php',
+		uploadData:{
+			"colum":"4"
+		},
+		cropUrl:'../cont/img_crop_to_file.php',
+		cropData:{
+			"colum":"4"
+		},
+		customUploadButtonId:'update_img_sto_photo4',
+		modal:true,
+		loaderHtml:'<div class="loader bubblingG"><span id="bubblingG_1"></span><span id="bubblingG_2"></span><span id="bubblingG_3"></span></div> ',
+		onAfterImgCrop:function(){ location.reload(); },
+		onError:function(errormessage){ console.log('onError:'+errormessage) }
+	};
+	var img_sto_photo4 = new Croppic('img_sto_photo4', img_sto_photo4_setting);
+
+	var img_sto_photo5_setting = {
+		uploadUrl:'../cont/img_save_to_file.php',
+		uploadData:{
+			"colum":"5"
+		},
+		cropUrl:'../cont/img_crop_to_file.php',
+		cropData:{
+			"colum":"5"
+		},
+		customUploadButtonId:'update_img_sto_photo5',
+		modal:true,
+		loaderHtml:'<div class="loader bubblingG"><span id="bubblingG_1"></span><span id="bubblingG_2"></span><span id="bubblingG_3"></span></div> ',
+		onAfterImgCrop:function(){ location.reload(); },
+		onError:function(errormessage){ console.log('onError:'+errormessage) }
+	};
+	var img_sto_photo5 = new Croppic('img_sto_photo5', img_sto_photo5_setting);
+
+	var img_sto_photo6_setting = {
+		uploadUrl:'../cont/img_save_to_file.php',
+		uploadData:{
+			"colum":"6"
+		},
+		cropUrl:'../cont/img_crop_to_file.php',
+		cropData:{
+			"colum":"6"
+		},
+		customUploadButtonId:'update_img_sto_photo6',
+		modal:true,
+		loaderHtml:'<div class="loader bubblingG"><span id="bubblingG_1"></span><span id="bubblingG_2"></span><span id="bubblingG_3"></span></div> ',
+		onAfterImgCrop:function(){ location.reload(); },
+		onError:function(errormessage){ console.log('onError:'+errormessage) }
+	};
+	var img_sto_photo6 = new Croppic('img_sto_photo6', img_sto_photo6_setting);
+
+	var img_sto_photo7_setting = {
+		uploadUrl:'../cont/img_save_to_file.php',
+		uploadData:{
+			"colum":"7"
+		},
+		cropUrl:'../cont/img_crop_to_file.php',
+		cropData:{
+			"colum":"7"
+		},
+		customUploadButtonId:'update_img_sto_photo7',
+		modal:true,
+		loaderHtml:'<div class="loader bubblingG"><span id="bubblingG_1"></span><span id="bubblingG_2"></span><span id="bubblingG_3"></span></div> ',
+		onAfterImgCrop:function(){ location.reload(); },
+		onError:function(errormessage){ console.log('onError:'+errormessage) }
+	};
+	var img_sto_photo7 = new Croppic('img_sto_photo7', img_sto_photo7_setting);
+
+	var img_sto_photo8_setting = {
+		uploadUrl:'../cont/img_save_to_file.php',
+		uploadData:{
+			"colum":"8"
+		},
+		cropUrl:'../cont/img_crop_to_file.php',
+		cropData:{
+			"colum":"8"
+		},
+		customUploadButtonId:'update_img_sto_photo8',
+		modal:true,
+		loaderHtml:'<div class="loader bubblingG"><span id="bubblingG_1"></span><span id="bubblingG_2"></span><span id="bubblingG_3"></span></div> ',
+		onAfterImgCrop:function(){ location.reload(); },
+		onError:function(errormessage){ console.log('onError:'+errormessage) }
+	};
+	var img_sto_photo8 = new Croppic('img_sto_photo8', img_sto_photo8_setting);
+
+//----------------UPLOAD PROMO PHOTO
+    var croppic_promo_photo = {
+        cropUrl:'../cont/promo_img_crop_to_file.php',
+        customUploadButtonId:'upload_promo_image',
+        modal:false,
+        processInline:true,
+        loaderHtml:'<div class="loader bubblingG"><span id="bubblingG_1"></span><span id="bubblingG_2"></span><span id="bubblingG_3"></span></div> ',
+        onAfterImgCrop:function(){ location.reload(); },
+        onError:function(errormessage){ console.log('onError:'+errormessage) }
+    }
+    var croppic_promo = new Croppic('my_promo_photo_box', croppic_promo_photo);
+
+//---------- DELL PROMO PHOTO
+    $('body').on('click', '.dell_promo_image', function() {
+        $.ajax({
+            type: 'POST',
+            url: '../cont/dell_promo_img.php',
+            success: function(result){
+               // alertify.success(result);
+                location.reload();
+            }
+        });
+    });
+
+//---------------------------
+// Edit profile
 	$('.list_send_settings > .checkbox_box > input').on('change', function() {
 		$name = $(this).attr('id');
 		if ($(this).is(':checked')) {
@@ -124,13 +236,112 @@ $('#popup_box').html('');
 		$.ajax({
 			type: 'POST',
 			url: '../cont/edit_profile.php',
+			dataType: 'json',
 			data: 'name='+$name+'&value='+$value+'&table=users',
 			success: function(result){
-				alertify.success(result);
-
+				console.log(result);
+				if (result.error) {
+					alertify.error(result.error.text);
+				};
+				if (result.result) {
+					if (result.result.status == 'ok') {
+						alertify.success(result.result.text);
+						if (result.result.do == 'go_url') {
+							document.location.href = result.result.url;
+						}
+						if (result.result.do == 'close_modal') {
+							$("#" + result.result.url).removeClass("md-show");
+						}
+					}
+				}
 			}
 		});
 	});
+	$('.servises_settings > .list_servises_settings > .checkbox_box > input').on('change', function() {
+		$value = '';
+		$('.servises_settings').find('input[type="checkbox"]').each(function (i, elem) {
+			if ($(this).is(':checked')) {
+				$value = $value + $(this).attr('name') + ';';
+			}
+			;
+		});
+		$.ajax({
+			type: 'POST',
+			url: '../cont/edit_profile.php',
+			dataType: 'json',
+			data: 'name=servises&value=' + $value + '&table=servises',
+			success: function (result) {
+				console.log(result);
+				if (result.error) {
+					alertify.error(result.error.text);
+				}
+				;
+				if (result.result) {
+					if (result.result.status == 'ok') {
+						alertify.success(result.result.text);
+						if (result.result.do == 'go_url') {
+							document.location.href = result.result.url;
+						}
+						if (result.result.do == 'close_modal') {
+							$("#" + result.result.url).removeClass("md-show");
+						}
+					}
+				}
+			}
+		});
+	});
+//dell_box_one_img
+
+	$('body').on('click', '.dell_box_one_img', function() {
+		$url = $(this).attr('data');
+		$.ajax({
+			type: 'POST',
+			url: '../cont/dell_box_one_img.php',
+			dataType: 'json',
+			data: 'url=' + $url,
+			success: function (result) {
+				console.log(result);
+				if (result.error) {
+					alertify.error(result.error.text);
+				}
+				;
+				if (result.result) {
+					if (result.result.status == 'ok') {
+						alertify.success(result.result.text);
+						$('.dell_box_one_img[data="'+$url+'"]').parent('div').remove();
+					}
+				}
+			}
+		});
+	});
+
+	$('body').on('click', '.detail_work_table', function() {
+		$id = $(this).attr('data');
+		if($('#hidden_data_'+$id).css('display') == 'none') {
+			$('#hidden_data_'+$id).show();
+			$(this).addClass('hide_detail_work_table').text('Свернуть');
+		} else {
+			$('#hidden_data_'+$id).hide();
+			$(this).removeClass('hide_detail_work_table').text('Детальнее');
+		}
+	});
+
+	/*
+	$('.filter_period > input[name="time"]').periodpicker({
+		end: '#time_end',
+		format:'d.m.Y H:i',
+		formatTime:'H:i',
+		formatDate:'d.m.Y',
+		lang: "ru",
+		i18n: {
+			ru: {
+				'Clear': 'Очистить'
+			}
+		},
+		clearButtonInButton: true
+	});
+
+
 //------------------ DAte
 	$.datetimepicker.setLocale('ru');
 	$('.data_time').datetimepicker({
@@ -197,6 +408,6 @@ $('#popup_box').html('');
 	$('body').on('click', '#modal-5 > .md-content > .md-content-header > .md-close', function() {
 		$("#modal-5").removeClass("md-show");
 	});
-
+*/
 
 });

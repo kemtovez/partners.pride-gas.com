@@ -60,3 +60,13 @@ function dsCrypt($input,$decrypt=false) {
         $o[] = $decrypt ? $s1[$al[1]][$al[0]] : $s2[$al[1]][$al[0]];
     return implode('',$o);
 }
+
+function setting($name) {
+    global $link;
+    $value = '';
+    $rs = mysqli_query($link, "SELECT * FROM `settings` WHERE `name`='$name'");
+    while($row = mysqli_fetch_assoc($rs)) {
+        $value = $row['value'];
+    }
+    return $value;
+}

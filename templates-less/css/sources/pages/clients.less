@@ -1,0 +1,207 @@
+#clients_page {
+  padding: 45px 0px;
+  h1 {
+    font: bold 25px / 1.2 "PT Sans", Helvetica, Arial, sans-serif;
+    margin-bottom: 28px;
+  }
+  .search_clients_box {
+    width: 520px;
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 40px;
+    border-right: 1px solid #d1d1d1;
+    margin-right: 40px;
+    label {
+      width: 205px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    p {
+      display: inline-block;
+      width: 269px;
+      margin-bottom: 30px;
+    }
+    button {
+      background: #9ea3ae;
+      width: 147px;
+    }
+  }
+  .right_box {
+    width: 300px;
+    button {
+      margin-bottom: 30px;
+      display: block;
+      &.my_clients {
+        width: 147px;
+      }
+    }
+  }
+  .clients_table {
+    table {
+      width: 100%;
+      thead {
+        background: #eff0f2;
+        font-weight: bold;
+        border-radius: 5px;
+        position: relative;
+        tr {
+          td {
+            padding: 13px 5px 13px 15px;
+            font-size: 18px;
+          }
+        }
+      }
+      tbody {
+        tr {
+          border-bottom: 1px solid rgba(209,209,209,0.69);
+          td {
+            padding: 13px 5px 13px 15px;
+            font-size: 15px;
+             a {
+               text-decoration: underline;
+               &:hover {
+                 text-decoration: none;
+               }
+             }
+          }
+        }
+      }
+    }
+  }
+}
+#client_page {
+  padding: 45px 0px;
+  h1 {
+    font: bold 25px / 1.2 "PT Sans", Helvetica, Arial, sans-serif;
+    margin-bottom: 28px;
+  }
+  .global_info {
+    background: #eff0f2;
+    padding: 40px 46px;
+    border-radius: 10px;
+    margin-bottom: 55px;
+    .left_side {
+      display: inline-block;
+      width: 430px;
+      border-right: 1px solid #d1d1d1;
+      margin-right: 48px;
+      vertical-align: top;
+      label {
+        display: inline-block;
+        width: 158px;
+        font-weight: bold;
+        padding-bottom: 23px;
+        vertical-align: top;
+      }
+      p {
+        display: inline-block;
+        width: 266px;
+      }
+    }
+    .right_side {
+      display: inline-block;
+      width: 385px;
+      label {
+        display: inline-block;
+        width: 237px;
+        font-weight: bold;
+        padding-bottom: 23px;
+        vertical-align: top;
+      }
+      p {
+        display: inline-block;
+      }
+    }
+  }
+  .table_user_work {
+    width: 100%;
+    thead {
+      background: none;
+      tr {
+        border-bottom: 1px solid rgba(209,209,209,0.69);
+        td:nth-child(1) {
+          width: 175px;
+        }
+        td:nth-child(2) {
+          width: 336px;
+        }
+        td:nth-child(3) {
+          width: 238px;
+        }
+        td:nth-child(4) {
+          width: 120px;
+        }
+
+      }
+    }
+    tbody {
+      tr {
+        height: 65px;
+        td:nth-child(4) {
+          b {
+            text-decoration: underline;
+          }
+        }
+        td:nth-child(5) {
+          p {
+            line-height: 18px;
+            padding-bottom: 30px;
+          }
+        }
+        td {
+          padding: 13px 5px 0px 28px;
+        }
+        &.hidden_data {
+          td {
+            padding: 0px 0px 0px 0px;
+          }
+          display: none;
+          .work_info {
+            .user_data {
+              display: block;
+              ul {
+                margin-bottom: 30px;
+                li {
+                  padding: 13px 5px 13px 28px;
+                  border-radius: 5px;
+                  position: relative;
+                  &:nth-child(odd) {
+                    background: #eff0f2;
+                  }
+                  label {
+                    font-weight: bold;
+                    width: 290px;
+                    display: inline-block;
+                    padding-right: 15px;
+                  }
+                  span {
+                    vertical-align: top;
+                  }
+                  p {
+                    vertical-align: top;
+                    display: inline-block;
+                    width: 599px;
+
+                  }
+                  ul {
+                    vertical-align: top;
+                    display: inline-block;
+                    width: 599px;
+                    li {
+                      padding: 0px;
+                      list-style: initial;
+                      &:nth-child(odd) {
+                        background: none;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
+}

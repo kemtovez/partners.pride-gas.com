@@ -1,13 +1,5 @@
 <?php
-function setting($name) {
-    global $link;
-    $value = '';
-    $rs = mysqli_query($link, "SELECT * FROM `settings` WHERE `name`='$name'");
-    while($row = mysqli_fetch_assoc($rs)) {
-        $value = $row['value'];
-}
-return $value;
-}
+
 function status_work($id) {
     if($id=='0') { $text = 'Новая заявка'; }
     if($id=='1') { $text = 'Распределена в СТО'; }
@@ -44,6 +36,7 @@ function data_service($arr, $time) {
     // 1474725600
     $html = '';
     $arr_ser = explode(";", $arr);
+    $arr_ser = array_diff($arr_ser, array(''));
     foreach ($arr_ser as $value) {
         $gar = '';
         $is_garant = substr_count($value, ':');
@@ -65,15 +58,7 @@ function data_service($arr, $time) {
             );
         }
     };
-
     return $data;
-
-
-
-      //  $html = $html.'<span>'.$arr_result['name'].' '.$gar.'</span>';
-
-
-
 }
 function get_service($title) {
     global $link;
@@ -82,6 +67,33 @@ function get_service($title) {
     while($row = mysqli_fetch_assoc($rs)) {
         $arr = array('id' => $row['id'], 'name' => $row['name'], 'title' => $row['title'], 'type' => $row['type'], '$is_garant' => $row['$is_garant']);
     }
-
     return $arr;
 }
+//--------------------
+//------------------------------
+function list_sto_service($arr) {
+    $html = '';
+    $arr_ser = explode(";", $arr);
+    $arr_ser = array_diff($arr_ser, array(''));
+    foreach ($arr_ser as $value) {
+        $arr_result = get_service($value);
+        $html = $html.'<li>'.$arr_result['name'].'</li>';
+    }
+    return $html;
+};
+//---------------------------------
+function get_gar_service($servises, $title) {
+    $html = '';
+    $arr_ser = explode(";", $servises);
+    $arr_ser = array_diff($arr_ser, array(''));
+    foreach ($arr_ser as $value) {
+        $kol_intimacy = substr_count($value, $title);
+        if($kol_intimacy>0) {
+            $html = $value;
+            $html = str_replace($title, "", $html);
+            $html = str_replace(":", "", $html);
+            break;
+        }
+    }
+    return $html;
+};

@@ -27,10 +27,6 @@
         <option name="myItemId" />
         <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
       </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="MySQL - pridegas@localhost" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
     </PATH>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
@@ -38,64 +34,23 @@
     <favorites_list name="partners.pride-gas.com" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="home.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/temp/home.php">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="common.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/common.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="20" column="125" selection-start-line="20" selection-start-column="125" selection-end-line="20" selection-end-column="125" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <marker date="1474842629802" expanded="true" signature="8972:9063" ph="SELECT * FRO... srm_works" />
-                <marker date="1474842629802" expanded="true" signature="9432:9522" ph="SELECT * FRO... srm_works_data_log" />
-                <marker date="1474842629802" expanded="true" signature="9788:9830" ph="SELECT * FRO... srm_sto" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.less" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates-less/css/sources/pages/home.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="148" column="25" selection-start-line="148" selection-start-column="25" selection-end-line="148" selection-end-column="25" />
+            <state relative-caret-position="119">
+              <caret line="309" column="24" selection-start-line="309" selection-start-column="24" selection-end-line="309" selection-end-column="61" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="buttons.less" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates-less/css/sources/controls/buttons.less">
+      <file leaf-file-name="im.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/im.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="56" column="18" selection-start-line="56" selection-start-column="18" selection-end-line="56" selection-end-column="21" />
+            <state relative-caret-position="425">
+              <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="54" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="form.less" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates-less/css/sources/controls/form.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="111" column="15" selection-start-line="111" selection-start-column="15" selection-end-line="111" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="info.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cont/info.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="14" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="14" />
-              <folding>
-                <marker date="1474835088824" expanded="true" signature="56:94" ph="SELECT * FRO... srm_sto" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -105,14 +60,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/cont/login.php" />
-        <option value="$PROJECT_DIR$/temp/top_block.php" />
-        <option value="$PROJECT_DIR$/templates-less/css/sources/layout/header.less" />
-        <option value="$PROJECT_DIR$/cont/info.php" />
-        <option value="$PROJECT_DIR$/templates-less/css/sources/controls/form.less" />
-        <option value="$PROJECT_DIR$/templates-less/css/sources/controls/buttons.less" />
-        <option value="$PROJECT_DIR$/templates-less/css/sources/pages/home.less" />
+        <option value="$PROJECT_DIR$/cont/bd_user.php" />
         <option value="$PROJECT_DIR$/temp/home.php" />
+        <option value="$PROJECT_DIR$/templates-less/css/sources/pages/home.less" />
+        <option value="$PROJECT_DIR$/temp/work_cat_list.php" />
+        <option value="$PROJECT_DIR$/cont/give_work.php" />
+        <option value="$PROJECT_DIR$/temp/headers/edit_report-header.php" />
+        <option value="$PROJECT_DIR$/templates-less/css/sources/pages/add_report.less" />
+        <option value="$PROJECT_DIR$/temp/headers/add_report-header.php" />
+        <option value="$PROJECT_DIR$/cont/dell_box_one_img.php" />
+        <option value="$PROJECT_DIR$/js/edit_report.js" />
+        <option value="$PROJECT_DIR$/cont/edit_report.php" />
+        <option value="$PROJECT_DIR$/js/work.js" />
+        <option value="$PROJECT_DIR$/temp/edit_report.php" />
+        <option value="$PROJECT_DIR$/templates-less/css/sources/controls/form.less" />
+        <option value="$PROJECT_DIR$/temp/add_user.php" />
+        <option value="$PROJECT_DIR$/js/add_user.js" />
+        <option value="$PROJECT_DIR$/templates-less/css/sources/pages/add_user.less" />
+        <option value="$PROJECT_DIR$/temp/add_report.php" />
+        <option value="$PROJECT_DIR$/js/add_report.js" />
+        <option value="$PROJECT_DIR$/cont/add_report.php" />
+        <option value="$PROJECT_DIR$/cont/add_user.php" />
+        <option value="$PROJECT_DIR$/temp/headers/calendar-header.php" />
+        <option value="$PROJECT_DIR$/templates-less/css/sources/vendor/qtip.less" />
+        <option value="$PROJECT_DIR$/cont/calendar.php" />
+        <option value="$PROJECT_DIR$/temp/calendar.php" />
+        <option value="$PROJECT_DIR$/cont/update_time_work.php" />
+        <option value="$PROJECT_DIR$/js/calendar.js" />
+        <option value="$PROJECT_DIR$/templates-less/css/sources/pages/calendar.less" />
+        <option value="$PROJECT_DIR$/templates-less/css/sources/vendor/fullcalendar.less" />
+        <option value="$PROJECT_DIR$/js/clients.js" />
+        <option value="$PROJECT_DIR$/temp/clients.php" />
+        <option value="$PROJECT_DIR$/temp/client_list.php" />
+        <option value="$PROJECT_DIR$/cont/settings.php" />
+        <option value="$PROJECT_DIR$/temp/client.php" />
+        <option value="$PROJECT_DIR$/templates-less/css/sources/pages/clients.less" />
+        <option value="$PROJECT_DIR$/templates-less/css/sources/pages/balance.less" />
+        <option value="$PROJECT_DIR$/temp/header.php" />
+        <option value="$PROJECT_DIR$/templates-less/css/sources/vendor/daterangepicker.less" />
+        <option value="$PROJECT_DIR$/templates-less/css/sources/main.less" />
+        <option value="$PROJECT_DIR$/js/common.js" />
+        <option value="$PROJECT_DIR$/js/balance.js" />
+        <option value="$PROJECT_DIR$/temp/balance.php" />
+        <option value="$PROJECT_DIR$/temp/balance_list.php" />
+        <option value="$PROJECT_DIR$/cont/add_chat_im.php" />
+        <option value="$PROJECT_DIR$/temp/im.php" />
+        <option value="$PROJECT_DIR$/js/im.js" />
+        <option value="$PROJECT_DIR$/templates-less/css/sources/pages/im.less" />
+        <option value="$PROJECT_DIR$/temp/chat_list.php" />
+        <option value="$PROJECT_DIR$/cont/info.php" />
+        <option value="$PROJECT_DIR$/temp/top_block.php" />
+        <option value="$PROJECT_DIR$/modules/im.php" />
       </list>
     </option>
   </component>
@@ -124,10 +122,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="1968" />
-    <option name="y" value="36" />
-    <option name="width" value="1538" />
-    <option name="height" value="910" />
+    <option name="x" value="1939" />
+    <option name="y" value="10" />
+    <option name="width" value="1857" />
+    <option name="height" value="995" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -154,8 +152,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -225,6 +223,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="sources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="partners.pride-gas.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="partners.pride-gas.com" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates-less" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -356,6 +380,24 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="temp" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="headers" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="partners.pride-gas.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="partners.pride-gas.com" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="modules" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -393,9 +435,57 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../modules/php/PHP-5.4/php.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -407,34 +497,42 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1474832766696</updated>
-      <workItem from="1474832767844" duration="8384000" />
+      <workItem from="1474832767844" duration="8982000" />
+      <workItem from="1474883850163" duration="23044000" />
+      <workItem from="1475143085786" duration="32974000" />
+      <workItem from="1475247972835" duration="6645000" />
+      <workItem from="1475323479218" duration="16811000" />
+      <workItem from="1475400505945" duration="10336000" />
+      <workItem from="1475577604458" duration="12464000" />
+      <workItem from="1475749125421" duration="15042000" />
+      <workItem from="1476098824348" duration="7178000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8384000" />
+    <option name="totallyTimeSpent" value="133476000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1968" y="36" width="1538" height="910" extended-state="0" />
-    <editor active="true" />
+    <frame x="1939" y="10" width="1857" height="995" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.282523" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23356871" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18856767" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11732754" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -453,146 +551,518 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/cc64f563-82d2-4ede-af1e-b9672fa4ad27/console.sql">
+    <entry file="file://$PROJECT_DIR$/temp/headers/add_report-header.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="67" selection-start-line="0" selection-start-column="67" selection-end-line="0" selection-end-column="67" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a3bdc09e-38ab-43d3-bce2-444b554f1158/console.sql">
+    <entry file="file://$PROJECT_DIR$/cont/dell_box_one_img.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="85">
+          <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cont/load_less.php">
+    <entry file="file://$PROJECT_DIR$/cont/edit_profile.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/temp/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/temp/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
+        <state relative-caret-position="1224">
+          <caret line="72" column="20" selection-start-line="72" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <marker date="1475147288797" expanded="true" signature="530:585" ph="UPDATE `srm_... " />
+            <marker date="1475147288797" expanded="true" signature="2074:2307" ph="UPDATE `srm_... " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates-less/css/sources/layout/header.less">
+    <entry file="file://$PROJECT_DIR$/temp/edit_report.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="46" column="28" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
-          <folding />
+        <state relative-caret-position="1258">
+          <caret line="74" column="40" selection-start-line="74" selection-start-column="40" selection-end-line="74" selection-end-column="40" />
+          <folding>
+            <marker date="1475339827000" expanded="true" signature="201:275" ph="SELECT * FRO... srm_sto_report" />
+            <marker date="1475339827000" expanded="true" signature="871:918" ph="SELECT * FRO... srm_works" />
+            <marker date="1475339827000" expanded="true" signature="8039:8071" ph="SELECT * FRO... srm_sto_services" />
+            <marker date="1475339827000" expanded="true" signature="9253:9275" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/temp/top_block.php">
+    <entry file="file://$PROJECT_DIR$/cont/edit_report.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="22" column="46" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
+          <folding>
+            <marker date="1475339213525" expanded="true" signature="737:792" ph="SELECT * FRO... srm_sto_report" />
+            <marker date="1475339213525" expanded="true" signature="737:844" ph="SELECT * FRO... srm_sto_report" />
+            <marker date="1475339213525" expanded="true" signature="1010:1162" ph="UPDATE `srm_... " />
+            <marker date="1475339213525" expanded="true" signature="1010:1182" ph="UPDATE `srm_... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/edit_report.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/work.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp/work.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="9" column="49" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cont/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="40" column="52" selection-start-line="40" selection-start-column="45" selection-end-line="40" selection-end-column="52" />
-          <folding>
-            <marker date="1474833232177" expanded="true" signature="1221:1265" ph="SELECT * FRO... srm_sto" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="9" column="33" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates-less/css/sources/controls/form.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="111" column="15" selection-start-line="111" selection-start-column="15" selection-end-line="111" selection-end-column="15" />
+        <state relative-caret-position="442">
+          <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cont/info.php">
+    <entry file="file://$PROJECT_DIR$/temp/add_user.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="14" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="14" />
+        <state relative-caret-position="544">
+          <caret line="77" column="55" selection-start-line="77" selection-start-column="49" selection-end-line="77" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates-less/css/sources/pages/add_user.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="952">
+          <caret line="56" column="21" selection-start-line="56" selection-start-column="21" selection-end-line="56" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/add_report.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="148" selection-start-line="33" selection-start-column="142" selection-end-line="33" selection-end-column="148" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/add_user.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="56" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cont/add_report.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="54" column="80" selection-start-line="54" selection-start-column="73" selection-end-line="54" selection-end-column="80" />
           <folding>
-            <marker date="1474835088824" expanded="true" signature="56:94" ph="SELECT * FRO... srm_sto" />
+            <marker date="1475416143237" expanded="true" signature="849:904" ph="SELECT * FRO... srm_sto_report" />
+            <marker date="1475416143237" expanded="true" signature="1000:1045" ph="SELECT * FRO... srm_works" />
+            <marker date="1475416143237" expanded="true" signature="1332:1561" ph="INSERT INTO `srm_sto_report`... " />
+            <marker date="1475416143237" expanded="true" signature="1628:1689" ph="UPDATE `srm_... " />
+            <marker date="1475416143237" expanded="true" signature="1711:1863" ph="INSERT INTO `srm_works_data_log`... " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates-less/css/sources/controls/buttons.less">
+    <entry file="file://$PROJECT_DIR$/temp/add_report.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="56" column="18" selection-start-line="56" selection-start-column="18" selection-end-line="56" selection-end-column="21" />
+        <state relative-caret-position="17">
+          <caret line="78" column="78" selection-start-line="78" selection-start-column="73" selection-end-line="78" selection-end-column="78" />
+          <folding>
+            <marker date="1475415600961" expanded="true" signature="157:202" ph="SELECT * FRO... srm_works" />
+            <marker date="1475415600961" expanded="true" signature="157:224" ph="SELECT * FRO... srm_works" />
+            <marker date="1475415600961" expanded="true" signature="544:617" ph="SELECT * FRO... srm_users_cars" />
+            <marker date="1475415600961" expanded="true" signature="841:888" ph="SELECT * FRO... srm_users" />
+            <marker date="1475415600961" expanded="true" signature="7092:7132" ph="..." />
+            <marker date="1475415600961" expanded="true" signature="7352:7384" ph="SELECT * FRO... srm_sto_services" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/add_user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="65" column="95" selection-start-line="65" selection-start-column="88" selection-end-line="65" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cont/add_user.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="138" column="51" selection-start-line="138" selection-start-column="51" selection-end-line="138" selection-end-column="51" />
+          <folding>
+            <marker date="1475416324707" expanded="true" signature="2142:2188" ph="SELECT * FRO... srm_users" />
+            <marker date="1475416324707" expanded="true" signature="2317:2359" ph="SELECT * FRO... srm_sto" />
+            <marker date="1475416324707" expanded="true" signature="2582:2777" ph="INSERT INTO `srm_users`... " />
+            <marker date="1475416324707" expanded="true" signature="2912:3083" ph="INSERT INTO `srm_users_cars`... " />
+            <marker date="1475416324707" expanded="true" signature="4924:4966" ph="SELECT * FRO... srm_sto" />
+            <marker date="1475416324707" expanded="true" signature="5159:5404" ph="INSERT INTO `srm_works`... " />
+            <marker date="1475416324707" expanded="true" signature="5520:5668" ph="INSERT INTO `srm_works_data_log`... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cont/utils.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="6" column="100" selection-start-line="6" selection-start-column="100" selection-end-line="6" selection-end-column="100" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates-less/css/sources/pages/home.less">
+    <entry file="file://$PROJECT_DIR$/temp/headers/calendar-header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="148" column="25" selection-start-line="148" selection-start-column="25" selection-end-line="148" selection-end-column="25" />
+        <state relative-caret-position="51">
+          <caret line="3" column="93" selection-start-line="3" selection-start-column="93" selection-end-line="3" selection-end-column="93" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates-less/css/sources/vendor/qtip.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="454">
+          <caret line="29" column="30" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp/calendar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="129" selection-start-line="14" selection-start-column="113" selection-end-line="14" selection-end-column="129" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cont/calendar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="40" column="22" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="22" />
+          <folding>
+            <marker date="1475585817649" expanded="true" signature="733:780" ph="SELECT * FRO... srm_works" />
+            <marker date="1475585817649" expanded="true" signature="1232:1281" ph="SELECT * FRO... srm_users_cars" />
+            <marker date="1475585817649" expanded="true" signature="1464:1509" ph="SELECT * FRO... srm_users" />
+            <marker date="1475585817649" expanded="true" signature="1722:1769" ph="SELECT * FRO... srm_works" />
+            <marker date="1475585817649" expanded="true" signature="1722:1800" ph="SELECT * FRO... srm_works" />
+            <marker date="1475585817649" expanded="true" signature="1722:1805" ph="SELECT * FRO... srm_works" />
+            <marker date="1475585817649" expanded="true" signature="1882:1923" ph="SELECT * FRO... srm_sto" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/calendar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="51" selection-start-line="31" selection-start-column="51" selection-end-line="31" selection-end-column="51" />
+          <folding>
+            <marker date="1475589146119" expanded="true" signature="3096:3122" ph="..." />
+            <marker date="1475589146119" expanded="true" signature="3096:3167" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates-less/css/sources/pages/calendar.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates-less/css/sources/vendor/fullcalendar.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="875" column="0" selection-start-line="875" selection-start-column="0" selection-end-line="875" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp/clients.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/clients.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp/client_list.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="82" column="27" selection-start-line="82" selection-start-column="27" selection-end-line="82" selection-end-column="27" />
+          <folding>
+            <marker date="1475752724356" expanded="true" signature="671:718" ph="SELECT * FRO... srm_users" />
+            <marker date="1475752724356" expanded="true" signature="881:923" ph="SELECT * FRO... srm_sto" />
+            <marker date="1475752724356" expanded="true" signature="1077:1132" ph="SELECT * FRO... srm_users_cars" />
+            <marker date="1475752724356" expanded="true" signature="1077:1148" ph="SELECT * FRO... srm_users_cars" />
+            <marker date="1475752724356" expanded="true" signature="2044:2139" ph="SELECT * FRO... srm_users_cars" />
+            <marker date="1475752724356" expanded="true" signature="2208:2264" ph="SELECT * FRO... srm_users_cars" />
+            <marker date="1475752724356" expanded="true" signature="2333:2405" ph="SELECT * FRO... srm_users_cars" />
+            <marker date="1475752724356" expanded="true" signature="2586:2631" ph="SELECT * FRO... srm_users" />
+            <marker date="1475752724356" expanded="true" signature="2900:2942" ph="SELECT * FRO... srm_sto" />
+            <marker date="1475752724356" expanded="true" signature="3779:3844" ph="SELECT * FRO... srm_works" />
+            <marker date="1475752724356" expanded="true" signature="4442:4491" ph="SELECT * FRO... srm_users_cars" />
+            <marker date="1475752724356" expanded="true" signature="5296:5373" ph="SELECT * FRO... srm_works_data_log" />
+            <marker date="1475752724356" expanded="true" signature="6559:6614" ph="SELECT * FRO... srm_sto_report" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/temp/home.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="20" column="125" selection-start-line="20" selection-start-column="125" selection-end-line="20" selection-end-column="125" />
+        <state relative-caret-position="357">
+          <caret line="102" column="0" selection-start-line="102" selection-start-column="0" selection-end-line="105" selection-end-column="28" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <marker date="1474842629802" expanded="true" signature="8972:9063" ph="SELECT * FRO... srm_works" />
-            <marker date="1474842629802" expanded="true" signature="9432:9522" ph="SELECT * FRO... srm_works_data_log" />
-            <marker date="1474842629802" expanded="true" signature="9788:9830" ph="SELECT * FRO... srm_sto" />
+            <marker date="1475251113982" expanded="true" signature="368:417" ph="SELECT * FRO... srm_works" />
+            <marker date="1475251113982" expanded="true" signature="604:685" ph="SELECT * FRO... srm_works_data_log" />
+            <marker date="1475251113982" expanded="true" signature="1456:1517" ph="SELECT * FRO... srm_users_feedback" />
+            <marker date="1475251113982" expanded="true" signature="7333:7385" ph="SELECT * FRO... srm_sto_images" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates-less/css/sources/pages/clients.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1955">
+          <caret line="115" column="0" selection-start-line="115" selection-start-column="0" selection-end-line="205" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates-less/css/sources/vendor/daterangepicker.less" />
+    <entry file="file://$PROJECT_DIR$/temp/balance_list.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+          <folding>
+            <marker date="1475767367956" expanded="true" signature="292:366" ph="SELECT * FRO... srm_sto_money_log" />
+            <marker date="1475767367956" expanded="true" signature="691:803" ph="SELECT * FRO... srm_sto_money_log" />
+            <marker date="1475767367956" expanded="true" signature="2112:2202" ph="SELECT * FRO... srm_works_data_log" />
+            <marker date="1475767367956" expanded="true" signature="2531:2586" ph="SELECT * FRO... srm_sto_report" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/balance.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="23" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates-less/css/sources/main.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates-less/css/sources/pages/balance.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cont/update_time_work.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="101" />
+          <folding>
+            <marker date="1475589108448" expanded="true" signature="340:417" ph="UPDATE `srm_... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp/work_cat_list.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="14" selection-end-column="7" />
+          <folding>
+            <marker date="1475259041594" expanded="true" signature="624:689" ph="SELECT * FRO... srm_works" />
+            <marker date="1475259041594" expanded="true" signature="1287:1336" ph="SELECT * FRO... srm_users_cars" />
+            <marker date="1475259041594" expanded="true" signature="2141:2200" ph="SELECT * FRO... srm_works_data_log" />
+            <marker date="1475259041594" expanded="true" signature="2141:2218" ph="SELECT * FRO... srm_works_data_log" />
+            <marker date="1475259041594" expanded="true" signature="3404:3459" ph="SELECT * FRO... srm_sto_report" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp/balance.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cont/add_chat_im.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
+          <folding>
+            <marker date="1476101693728" expanded="true" signature="110:151" ph="SELECT * FRO... srm_sto" />
+            <marker date="1476101693728" expanded="true" signature="504:666" ph="INSERT INTO `srm_chat`... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp/client.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="70" column="38" selection-start-line="70" selection-start-column="38" selection-end-line="70" selection-end-column="67" />
+          <folding>
+            <marker date="1475755286235" expanded="true" signature="57:102" ph="SELECT * FRO... srm_users" />
+            <marker date="1475755286235" expanded="true" signature="463:536" ph="SELECT * FRO... srm_users_cars" />
+            <marker date="1475755286235" expanded="true" signature="2010:2079" ph="SELECT * FRO... srm_works" />
+            <marker date="1475755286235" expanded="true" signature="2504:2594" ph="SELECT * FRO... srm_works_data_log" />
+            <marker date="1475755286235" expanded="true" signature="2855:2897" ph="SELECT * FRO... srm_sto" />
+            <marker date="1475755286235" expanded="true" signature="3437:3492" ph="SELECT * FRO... srm_sto_report" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cont/give_work.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1037">
+          <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+          <folding>
+            <marker date="1475324516531" expanded="true" signature="372:413" ph="SELECT * FRO... srm_sto" />
+            <marker date="1475324516531" expanded="true" signature="584:629" ph="SELECT * FRO... srm_works" />
+            <marker date="1475324516531" expanded="true" signature="1255:1411" ph="INSERT INTO `srm_works_data_log`... " />
+            <marker date="1475324516531" expanded="true" signature="1502:1566" ph="UPDATE `srm_... " />
+            <marker date="1475324516531" expanded="true" signature="1651:1713" ph="UPDATE `srm_... " />
+            <marker date="1475324516531" expanded="true" signature="1789:1987" ph="INSERT INTO `srm_sto_money_log`... " />
+            <marker date="1475324516531" expanded="true" signature="2078:2139" ph="UPDATE `srm_... " />
+            <marker date="1475324516531" expanded="true" signature="2409:2454" ph="SELECT * FRO... srm_works" />
+            <marker date="1475324516531" expanded="true" signature="2581:2737" ph="INSERT INTO `srm_works_data_log`... " />
+            <marker date="1475324516531" expanded="true" signature="2803:2880" ph="UPDATE `srm_... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates-less/css/sources/pages/im.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="69" column="39" selection-start-line="69" selection-start-column="39" selection-end-line="69" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp/im.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="52" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cont/settings.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="36" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
+          <folding>
+            <marker date="1475755172011" expanded="true" signature="1954:2009" ph="SELECT * FRO... srm_sto_services" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp/top_block.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="102" selection-start-line="9" selection-start-column="102" selection-end-line="9" selection-end-column="102" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/im.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="10" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="10" />
+          <folding>
+            <marker date="1476103767536" expanded="true" signature="131:184" ph="UPDATE `srm_... " />
+            <marker date="1476103767536" expanded="true" signature="131:191" ph="UPDATE `srm_... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cont/info.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="713">
+          <caret line="62" column="7" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="7" />
+          <folding>
+            <marker date="1476103600560" expanded="true" signature="56:94" ph="SELECT * FRO... srm_sto" />
+            <marker date="1476103600560" expanded="true" signature="1280:1303" ph="SELECT * FRO... srm_sto" />
+            <marker date="1476103600560" expanded="true" signature="1280:1334" ph="SELECT * FRO... srm_sto" />
+            <marker date="1476103600560" expanded="true" signature="1578:1660" ph="SELECT * FRO... srm_sto" />
+            <marker date="1476103600560" expanded="true" signature="1889:1938" ph="SELECT * FRO... srm_works" />
+            <marker date="1476103600560" expanded="true" signature="1889:1955" ph="SELECT * FRO... srm_works" />
+            <marker date="1476103600560" expanded="true" signature="2062:2115" ph="SELECT * FRO... srm_chat" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="309" column="24" selection-start-line="309" selection-start-column="24" selection-end-line="309" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp/chat_list.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="2" selection-start-line="26" selection-start-column="2" selection-end-line="26" selection-end-column="2" />
+          <folding>
+            <marker date="1476103463225" expanded="true" signature="127:168" ph="SELECT * FRO... srm_sto" />
+            <marker date="1476103463225" expanded="true" signature="460:521" ph="SELECT * FRO... srm_chat" />
+            <marker date="1476103463225" expanded="true" signature="537:587" ph="SELECT * FRO... srm_sto" />
+            <marker date="1476103463225" expanded="true" signature="612:636" ph="SELECT * FRO... srm_chat" />
+            <marker date="1476103463225" expanded="true" signature="612:650" ph="SELECT * FRO... srm_chat" />
+            <marker date="1476103463225" expanded="true" signature="666:716" ph="SELECT * FRO... srm_sto" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/im.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="54" />
+          <folding />
         </state>
       </provider>
     </entry>

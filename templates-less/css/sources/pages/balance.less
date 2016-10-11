@@ -1,0 +1,162 @@
+#balance_page {
+  padding: 45px 0px;
+ .balanse_heager {
+   padding-bottom: 50px;
+   width: 562px;
+   display: inline-block;
+   vertical-align: top;
+   .filter_period {
+     padding: 60px 0px;
+     label {
+       font-size: 18px;
+       padding-right: 20px;
+     }
+     input {}
+     button {
+       background: #9ea3ae;
+       font-size: 18px;
+       width: 166px;
+       margin-left: 20px;
+     }
+   }
+ }
+  .add_money {
+    width: 241px;
+    display: inline-block;
+    vertical-align: top;
+    background: #eff0f2;
+    padding: 17px;
+    border-radius: 10px;
+    float: right;
+    .balanse_box {
+      h5 {
+        font-weight: bold;
+        color: #27282d;
+        text-decoration: underline;
+        background: url(img/balanse_box.png) 28% 89% no-repeat;
+        padding: 6px 0px;
+      }
+      p {
+        font-size: 40px;
+        font-weight: bold;
+        padding: 10px 10px;
+        border: 1px solid #b5b5b5;
+        border-radius: 10px;
+        text-align: center;
+        margin-bottom: 35px;
+        margin-top: 10px;
+        span {
+          font-size: 20px;
+          padding-left: 10px;
+        }
+      }
+    }
+    form {
+      .green_buttons {
+        width: 210px;
+      }
+    }
+  }
+  h1 {
+    font: bold 25px / 1.2 "PT Sans", Helvetica, Arial, sans-serif;
+    margin-bottom: 28px;
+  }
+
+
+  .table_user_work {
+    width: 100%;
+    thead {
+      background: none;
+      tr {
+        border-bottom: 1px solid rgba(209, 209, 209, 0.69);
+        td:nth-child(1) {
+          width: 75px;
+        }
+        td:nth-child(2) {
+          width: 136px;
+        }
+        td:nth-child(3) {
+          width: 160px;
+        }
+        td:nth-child(4) {
+          width: 120px;
+        }
+        td:nth-child(5) {
+          width: 172px;
+        }
+        td:nth-child(6) {
+          width: 155px;
+        }
+      }
+    }
+    tbody {
+      tr {
+        height: 65px;
+        td:nth-child(4) {
+          b {
+            text-decoration: underline;
+          }
+        }
+        td:nth-child(5) {
+          p {
+            line-height: 18px;
+            padding-bottom: 30px;
+          }
+        }
+        td {
+          padding: 13px 5px 0px 28px;
+        }
+        &.hidden_data {
+          td {
+            padding: 0px 0px 0px 0px;
+          }
+          display: none;
+          .work_info {
+            .user_data {
+              display: block;
+              ul {
+                margin-bottom: 30px;
+                li {
+                  padding: 13px 5px 13px 28px;
+                  border-radius: 5px;
+                  position: relative;
+                  &:nth-child(odd) {
+                    background: #eff0f2;
+                  }
+                  label {
+                    font-weight: bold;
+                    width: 290px;
+                    display: inline-block;
+                    padding-right: 15px;
+                  }
+                  span {
+                    vertical-align: top;
+                  }
+                  p {
+                    vertical-align: top;
+                    display: inline-block;
+                    width: 599px;
+
+                  }
+                  ul {
+                    vertical-align: top;
+                    display: inline-block;
+                    width: 599px;
+                    li {
+                      padding: 0px;
+                      list-style: initial;
+                      &:nth-child(odd) {
+                        background: none;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
+}

@@ -25,7 +25,7 @@
 	<script language="javascript" type="text/javascript" src="../js/ZeroClipboard.js"></script>
 	<script language="javascript" type="text/javascript" src="../js/jquery.tipsy.js"></script>
 	<script language="javascript" type="text/javascript" src="../js/jquery.datetimepicker.full.min.js"></script>
-	<!--<script language="javascript" type="text/javascript" src="../js/croppic.min.js"></script>-->
+	<script language="javascript" type="text/javascript" src="../js/croppic.min.js"></script>
 	<!-- Modal -->
 	<script language="javascript" type="text/javascript" src="../js/modal/modernizr.custom.js"></script>
 	<!-- Common -->

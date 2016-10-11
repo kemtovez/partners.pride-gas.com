@@ -30,6 +30,10 @@
         bottom: 20px;
         left: 60px;
       }
+      #my_promo_photo_box {
+        width: 320px;
+        height: 320px;
+      }
     }
     a {
       color: #27282d;
@@ -52,9 +56,6 @@
     width: 585px;
     display: inline-block;
     vertical-align: top;
-    background: #eff0f2;
-    padding: 25px;
-    border-radius: 9px;
     .left_block {
       width: 299px;
       display: inline-block;
@@ -69,6 +70,9 @@
       padding-left: 17px;
     }
     .raytings_and_balance {
+      background: #eff0f2;
+      padding: 25px;
+      border-radius: 9px;
       h3 {
         font-size: 20px;
         font-weight: bold;
@@ -163,6 +167,134 @@
       width: 100%;
       margin-bottom: 15px;
     }
+    .statistic_work_box {
+      padding-top: 50px;
+      h3 {
+        font-weight: bold;
+        font-size: 19px;
+        padding-bottom: 20px;
+      }
+      .statistic_work_data {
+        padding-bottom: 25px;
+        span {
+          text-decoration: underline;
+        }
+      }
+      ul {
+        padding-left: 20px;
+
+        li {
+          list-style: initial;
+          padding: 4px 0px;
+        }
+      }
+      p {
+        background: url(img/statistic_work_data.png) top center no-repeat;
+        padding-top: 70px;
+        padding-right: 65px;
+        font-size: 18px;
+        line-height: 22px;
+        position: relative;
+        span {
+          font-size: 60px;
+          font-weight: bold;
+          vertical-align: top;
+          position: absolute;
+          right: 20px;
+          bottom: 11px;
+          height: 34px;
+        }
+      }
+    }
   }
 }
+  .detail_sto_table {
+    margin-top: 50px;
+    width: 100%;
+    thead {
+      background: #eff0f2;
+      font-weight: bold;
+      position: relative;
+      tr {
+        border-radius: 5px;
+        td {
+          padding: 13px 5px 13px 28px;
+          font-size: 18px;
+        }
+          td:nth-child(1) {
+            width: 200px;
+          }
+        td:nth-child(2) {
+          width: 240px;
+        }
+        td:nth-child(3) {
+          width: 230px;
+        }
+      }
+    }
+    tbody {
+      tr {
+        td {
+          padding: 13px 5px 13px 28px;
+          p {
+            padding-bottom: 4px;
+          }
+          &:nth-child(2) {
+            text-decoration: underline;
+          }
+          li {
+            list-style: initial;
+            padding-bottom: 4px;
+          }
+        }
+      }
+    }
+  }
+  .sto_photo_box {
+    h3 {
+      font-weight: bold;
+      font-size: 20px;
+      padding-bottom: 20px;
+    }
+    .sto_photo_block {
+      .sto_photo {
+        width: 225px;
+        height: 246px;
+        display: inline-block;
+        vertical-align: top;
+        margin: 5px;
+        position: relative;
+        h4 {
+          color: #27282d;
+          font-style: italic;
+          width: 225px;
+          padding-bottom: 10px;
+        }
+        a {
+          display: block;
+        }
+        img {
+          width: 225px;
+        }
+        .my_sto_photo_box {
+          display: none;
+        }
+        .update_img_sto_photo {
+          background: url(img/upload_promo_image.png);
+          width: 27px;
+          height: 27px;
+          display: block;
+          cursor: pointer;
+          position: absolute;
+          bottom: 20px;
+          left: 20px;
+        }
+      }
+    }
+    #img_sto_photo1, #img_sto_photo2, #img_sto_photo3, #img_sto_photo4, #img_sto_photo5, #img_sto_photo6, #img_sto_photo7 #img_sto_photo8 {
+      width: 225px;
+      height: 225px;
+      position: relative;
+    }
+  }
 }
